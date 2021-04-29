@@ -8,4 +8,4 @@ Este repositório tem a finalidade de disponibilizar conteúdos relacionados a p
 
 | Tutoriais  | Descrição |
 | ------------- | ------------- |
-| [Git - GitHub](https://github.com/educacao-gama/desafios-gama/tree/main/bankline)  | Um gerenciador financeiro inteligente  |
+| [Git - GitHub](https://github.com/educacao-gama/tutoriais/tree/main/git-github)  | Git – Git Hub - Comandos Básicos  |
