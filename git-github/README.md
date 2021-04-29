@@ -22,3 +22,12 @@ Em nosso exemplo, criamos um diretório em `C:\gama\[meu-repositorio]` e depois 
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-bash.png)
 
+No `Git Bash` iniciamos com o comando abaixo:
+
+```
+git init
+```
+
+Observe que dentro do diretório `C:\gama\[meu-repositorio]` será criado uma pasta oculta chamada de `.git` e no terminal além do diretório será acrescido a plavavra `(master)`
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-init.png)
