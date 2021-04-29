@@ -66,7 +66,13 @@ git remote add origin https://github.com/educacao-gama/meu-repositorio.git (seu 
 ```
 git push -u origin main
 ```
+1. username
 
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/username.png)
+
+1. password
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/password.png)
 
 
 
