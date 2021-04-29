@@ -36,43 +36,50 @@ Após este processo, vamos criar um arquivo chamado `file.txt` para testarmos a 
 
 PRONTO! Vamos aos comandos do git para sincronizar nossas alterações:
 
-1. Precisamos adicionar os documentos (forma mais abreviada):
+* Precisamos adicionar os documentos (forma mais abreviada):
 ```
 git add .
 ```
 
-1. Geramos um lote (commit)  destas alterações informando uma mensagem correspondente:
+* Geramos um lote (commit)  destas alterações informando uma mensagem correspondente:
 ```
 git commit -m "incluindo o nosso arquivo file.txt"
 ```
 
-1. Esta seria a hora do `git push`, mas ainda precisamos criar nosso repositorio no GitHub acessando `https://github.com/`, faça o Login e depois crie o repositório com o nome de sua escolha.
+* Esta seria a hora do `git push`, mas ainda precisamos criar nosso repositorio no GitHub acessando `https://github.com/`, faça o Login e depois crie o repositório com o nome de sua escolha.
 
 > NOTA: O Github cria uma branch `main`, por isto precisamos realizar o comando que muda da branch `master` para a branch `main` e assim conseguirmos sincronizar o nosso reposítorio local com o remoto.
 
-1. Alterando branch `master` para `main` :
+* Alterando branch `master` para `main` :
 ```
 git branch -M main
 ```
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/branch-main.png)
 
-1. O comando abaixo determina qual repositório nossos arquivos serão sincronizados (NÃO quer dizer que já serão replicados)
+* O comando abaixo determina qual repositório nossos arquivos serão sincronizados (NÃO quer dizer que já serão replicados)
 ```
 git remote add origin https://github.com/educacao-gama/meu-repositorio.git (seu repositório)
 ```
 
-1. Ponto, agora é sincronizar as nossas alterações com o comando, esta fase vai ter pedir para informar o seu login e senha do GitHub.
+* Ponto, agora é sincronizar as nossas alterações com o comando, esta fase vai ter pedir para informar o seu login e senha do GitHub.
 ```
 git push -u origin main
 ```
-1. username
+* username
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/username.png)
 
-1. password
+* password
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/password.png)
+
+* Validando a sincronização
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/push.png)
+
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/push-ok.png)
 
 
 
