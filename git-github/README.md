@@ -53,6 +53,12 @@ git commit -m "incluindo o nosso arquivo file.txt"
 
 > NOTA: O Github cria uma branch `main`, por isto precisamos realizar o comando que muda da branch `master` para a branch `main` e assim conseguirmos sincronizar o nosso reposítorio local com o remoto.
 
+1. Alterando branch `master` para `main` :
+```
+git branch -M main
+```
+
+
 
 
 
