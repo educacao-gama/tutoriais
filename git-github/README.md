@@ -31,3 +31,22 @@ git init
 Observe que dentro do diretório `C:\gama\[meu-repositorio]` será criado uma pasta oculta chamada de `.git` e no terminal além do diretório será acrescido a plavavra `(master)`
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-init.png)
+
+Após este processo, vamos criar um arquivo chamado `file.txt` para testarmos a sincronização de nossos arquivos no GitHub.
+
+PRONTO! Vamos aos comandos do git para sincronizar nossas alterações:
+
+1. Precisamos adicionar os documentos (forma mais abreviada):
+```
+git add .
+```
+
+1. Geramos um lote (commit)  destas alterações informando uma mensagem correspondente:
+```
+git commit -m "incluindo o nosso arquivo file.txt"
+```
+
+
+
+
+
