@@ -14,3 +14,6 @@ Acesse: https://git-scm.com/
 ```
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-download.png)
+
+
+Inicie o MS-DOS ou Power Shell
