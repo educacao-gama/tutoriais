@@ -48,9 +48,6 @@ git commit -m "incluindo o nosso arquivo file.txt"
 
 1. Esta seria a hora do `git push`, mas ainda precisamos criar nosso repositorio no GitHub acessando `https://github.com/`, faça o Login e depois crie o repositório com o nome de sua escolha.
 
-
-![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-init.png)
-
 > NOTA: O Github cria uma branch `main`, por isto precisamos realizar o comando que muda da branch `master` para a branch `main` e assim conseguirmos sincronizar o nosso reposítorio local com o remoto.
 
 1. Alterando branch `master` para `main` :
