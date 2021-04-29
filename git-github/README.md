@@ -90,7 +90,8 @@ Obtendo as alterações realizadas por outros membros do repositório: (Git bash
 ```
 git pull
 ```
-NOTA: Você precisa estar no diretório que representa o seu repositório
+NOTA: Você precisa estar no diretório que representa o seu repositório, o `Git bash` sinaliza a `branch` atual.
+
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-pull.png)
 
 
