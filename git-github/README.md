@@ -16,4 +16,9 @@ Acesse: https://git-scm.com/
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-download.png)
 
 
-Inicie o MS-DOS ou Power Shell
+Depois do git devidadamente instalado, vamos inicializar nosso primeiro repositório.
+
+Em nosso exemplo, criamos um diretório em `C:\gama\[meu-repositorio]` e depois clicamos com o botão direito do mouse para abrirmos o `Git Bash`
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-bash.png)
+
