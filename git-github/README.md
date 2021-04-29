@@ -58,6 +58,8 @@ git commit -m "incluindo o nosso arquivo file.txt"
 git branch -M main
 ```
 
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/branch-main.png)
+
 1. O comando abaixo determina qual repositório nossos arquivos serão sincronizados (NÃO quer dizer que já serão replicados)
 ```
 git remote add origin https://github.com/educacao-gama/meu-repositorio.git (seu repositório)
