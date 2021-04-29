@@ -46,6 +46,8 @@ git add .
 git commit -m "incluindo o nosso arquivo file.txt"
 ```
 
+1. Esta seria a hora do `git push`, mas ainda precisamos criar nosso repositorio no GitHub acessando `https://github.com/` e faça o Login.
+
 
 
 
