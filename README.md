@@ -9,3 +9,4 @@ Este repositório tem a finalidade de disponibilizar conteúdos relacionados a p
 | Tutoriais  | Descrição |
 | ------------- | ------------- |
 | [Git - GitHub](https://github.com/educacao-gama/tutoriais/tree/main/git-github)  | Git – Git Hub - Comandos Básicos  |
+| [NodeJs - Yarn](https://github.com/educacao-gama/tutoriais/tree/main/node-app-yarn)  | Iniciando um projeto Node.JS com Yarn  |
