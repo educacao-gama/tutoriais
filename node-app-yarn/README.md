@@ -11,13 +11,13 @@ Instalando o Node.JS: (windows)
 Acesse: https://nodejs.org/en/
 ```
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-download.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/node_install.png)
 
 Para validar se o Node.JS foi instalado, no prompt de commando execute
 ```
 node -v
 ```
-![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-download.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/node_version.png)
 
 Instalando o yarn
 ```
@@ -27,7 +27,7 @@ Verificando a instalação do yarn
 ```
 yarn --version
 ```
-![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-bash.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/yarn.png)
 
 Iniciando nosso projeto gama-xp-app com yarn
 
@@ -43,6 +43,7 @@ yarn init
 yarn add express
 ```
 Abaixo segue imagem de estrutura do projeto
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
 
 
 
