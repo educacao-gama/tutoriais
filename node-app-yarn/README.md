@@ -48,3 +48,6 @@ Abaixo segue imagem de estrutura do projeto
 
 Vale lembrar que todos os comandos `npm` ou `yarn` manipulam o arquivo `package.json` que é o arquivo central de qualquer aplicação Node.JS
 
+Primeiros passos para implementação do projeto:
+1. Criar a pasta `src` no mesmo nível do arquivo `package.json`
+2. Criar o arquivo `server.ts` dentro de `src`
