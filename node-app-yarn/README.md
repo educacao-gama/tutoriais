@@ -67,3 +67,12 @@ Primeiros passos para implementação do projeto:
    yarn add ts-node-dev -D
    ```
    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
+
+
+1. Criando script de incialização da aplicação com `ts-node`, incluindo a tags `scripts` no arquivo `package.json`
+   ```
+    "scripts": {
+        "dev":"ts-node-dev src/server.ts"
+     },
+   ```
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
