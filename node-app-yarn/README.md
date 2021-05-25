@@ -1,9 +1,12 @@
 # Gama Academy - Transformando Talentos para o Futuro
 
+## Node.JS e Yarn
+
+Iniciando um projeto Node.JS com NPM e Yarn - No WINDOWS
+
 #### Autores
 - [Gleyson Sampaio](https://github.com/gleyson-gama)
 
-Iniciando um projeto Node.JS com NPM e Yarn - No WINDOWS
 
 Instalando o Node.JS: (windows)
 
