@@ -76,9 +76,18 @@ Primeiros passos para implementação do projeto:
      },
    ```
    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/tsnode-scripts-dev.png)
-1. No arquivo `src\server.ts` vamos iniciar nosso algorítimo para execução uma aplicação Node na porta 3000.
+   
 1. A partir de agora vamos iniciar com a codificação baseada em nossas bibliotecas como `express`, `typescript` e etc, logo precisamos adicionar mais uma dependência.
    ```
    yarn add @types/express -D
    ```
    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/tsnode.png)
+   
+1. No arquivo `src\server.ts` vamos iniciar nosso algorítimo para execução uma aplicação Node na porta 3000.
+    ```
+   import express from 'express';
+
+   const app = express();
+
+   app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
+   ```
