@@ -12,7 +12,7 @@ Criando APIs simples com Node.JS
 
 Com base no nosso projeto Node.JS com Yarn iremos criaremos rotas ou serviços APIs para gerenciamento de filmes conforme dados ilustrativos abaixo.
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/node_install.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-api/filme.png)
 
 ###### Fonte: https://www.adorocinema.com/filmes/filme-268680/
 
@@ -37,8 +37,9 @@ Criando nossa primeira rota \ serviço para retornar uma mensagem no formato `.j
     });
    ```
    
-  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/node_install.png)
-  
+  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-api/get-mensagem.png)
+
+1. Acessando a URL: `http://localhost:3000/` deverá ser apresentando a mensagem abaixo: 
    ```
    {"mensagem":"Bem-vindes ao Gama - XP","ano":2021}
    ```
