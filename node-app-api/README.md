@@ -46,6 +46,8 @@ Criando nossa primeira rota \ serviço para retornar uma mensagem no formato `.j
    
 
 * NOTA: Nosso arquivo server.js está ficando com muito código de zero de organização, hora de iniciar um padrão de projetos, no nosso caso o Padrão MVC que veremos no link abaixo:
+###### [Node App - Padrão MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)
+
 
 
 
