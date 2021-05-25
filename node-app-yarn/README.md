@@ -92,3 +92,9 @@ Primeiros passos para implementação do projeto:
    app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
    ```
    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/server-ts.png)
+   
+1. Iniciando nosso servidor na porta 3000.
+   ```
+   yarn dev
+   ```
+   
