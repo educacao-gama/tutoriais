@@ -60,13 +60,13 @@ Primeiros passos para implementação do projeto:
     ```
     yarn tsc --init
     ```
-    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
+    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/node_typescript.png)
     
-1. Para finalizar nossa configuração, precisamos recursos de inicialição e reload da aplicação em tempo de desenvolvimento.
+1. Para finalizar nossa configuração, precisamos adicionar recursos de inicialização e reload da aplicação em tempo de desenvolvimento.
    ```
    yarn add ts-node-dev -D
    ```
-   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/tsnode.png)
 
 
 1. Criando script de incialização da aplicação com `ts-node`, incluindo a tags `scripts` no arquivo `package.json`
@@ -75,4 +75,19 @@ Primeiros passos para implementação do projeto:
         "dev":"ts-node-dev src/server.ts"
      },
    ```
-   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/tsnode-scripts-dev.png)
+   
+1. A partir de agora vamos iniciar com a codificação baseada em nossas bibliotecas como `express`, `typescript` e etc, logo precisamos adicionar mais uma dependência.
+   ```
+   yarn add @types/express -D
+   ```
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/tsnode.png)
+   
+1. No arquivo `src\server.ts` vamos iniciar nosso algorítimo para execução uma aplicação Node na porta 3000.
+    ```
+   import express from 'express';
+
+   const app = express();
+
+   app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
+   ```
