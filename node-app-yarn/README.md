@@ -56,7 +56,14 @@ Primeiros passos para implementação do projeto:
     yarn add typescript -D
    ```
    -D: dependência de desenvolvimento
-1. Para que nosso projeto tenha compatibilidade com a sintaxe do TypeScritp precisaremos executar o comando
+1. Para que nosso projeto tenha compatibilidade com a sintaxe do TypeScript precisaremos executar o comando
     ```
     yarn tsc --init
     ```
+    ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
+    
+1. Para finalizar nossa configuração, precisamos recursos de inicialição e reload da aplicação em tempo de desenvolvimento.
+   ```
+   yarn add ts-node-dev -D
+   ```
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
