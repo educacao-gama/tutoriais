@@ -36,7 +36,7 @@ Iniciando nosso projeto gama-xp-app com yarn
 ```
 yarn init
 ```
-** Serão realizadas algumas perguntas relacionadas ao projeto como nome do projeto, version, nome do autor.
+Serão realizadas algumas perguntas relacionadas ao projeto como nome do projeto, version, nome do autor.
 
 1. Muitas das aplicações em Node.JS trabalham com a finalidade de prover APIs, logo precisaremos instalar o express para obter alguns de seus recursos.
 ```
