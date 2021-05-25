@@ -50,9 +50,13 @@ Vale lembrar que todos os comandos `npm` ou `yarn` manipulam o arquivo `package.
 
 Primeiros passos para implementação do projeto:
 1. Criar a pasta `src` no mesmo nível do arquivo `package.json`
-2. Criar o arquivo `server.ts` dentro de `src`
-3. A partir de agora toda nossa sintaxe será escrita em JavaScript com a convenção do TypeScript, para isso é necessário executar o comando
+1. Criar o arquivo `server.ts` dentro de `src`
+1. A partir de agora toda nossa sintaxe será escrita em JavaScript com a convenção do TypeScript, para isso é necessário executar o comando
    ```
     yarn add typescript -D
    ```
    -D: dependência de desenvolvimento
+1. Para que nosso projeto tenha compatibilidade com a sintaxe do TypeScritp precisaremos executar o comando
+    ```
+    yarn tsc --init
+    ```
