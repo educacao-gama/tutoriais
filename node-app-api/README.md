@@ -19,7 +19,7 @@ Com base no nosso projeto Node.JS com Yarn iremos criaremos rotas ou serviços A
 
 Conhecendo um pouco sobre o que é API Rest.
 API Rest é uma interface que possibilidade a interação entre sistemas tranferindo conteúdo em possíveis formatos como: JSON, XML, TEXT etc.
-Esta interação são requisições de criação de conteúdo: POST, alteração: PUT, buscas: GET, remoção:DELETE entre outras.
+Esta interação são requisições de criação de conteúdo: POST, alteração: PUT, buscas: GET, remoção: DELETE entre outras.
 Conheça um pouco mais sobre Arquitetura REST, Restfull, APIs
 
 Criando nossa primeira rota \ serviço
