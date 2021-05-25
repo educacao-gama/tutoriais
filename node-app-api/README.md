@@ -1,6 +1,6 @@
 # Gama Academy - Transformando Talentos para o Futuro
 
-## Node.JS - APis
+## Node.JS - APIs
 
 Criando APIs simples com Node.JS
 
