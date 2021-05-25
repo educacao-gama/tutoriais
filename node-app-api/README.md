@@ -43,6 +43,9 @@ Criando nossa primeira rota \ serviço para retornar uma mensagem no formato `.j
    ```
    {"mensagem":"Bem-vindes ao Gama - XP","ano":2021}
    ```
+   
+
+NOTA: Nosso arquivo server.js está ficando com muito código de zero de organização, hora de iniciar um padrão de projetos, no nosso caso o Padrão MVC que veremos no link abaixo:
 
 
 
