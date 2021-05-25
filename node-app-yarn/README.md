@@ -46,5 +46,5 @@ Abaixo segue imagem de estrutura do projeto
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
 
-
+Vale lembrar que todos os comandos `npm` ou `yarn` manipulam o arquivo `package.json` que é o arquivo central de qualquer aplicação Node.JS
 
