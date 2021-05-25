@@ -81,6 +81,19 @@ git push -u origin main
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/push-ok.png)
 
+Clonando um repositório em nossa máquina: (Git bash)
+```
+git clone https://github.com/educacao-gama/meu-repositorio.git
+```
+
+Obtendo as alterações realizadas por outros membros do repositório: (Git bash)
+```
+git pull
+```
+NOTA: Você precisa estar no diretório que representa o seu repositório, o `Git bash` sinaliza a `branch` atual.
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-pull.png)
+
 
 
 

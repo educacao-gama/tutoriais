@@ -4,7 +4,7 @@
 - [Gleyson Sampaio](https://github.com/gleyson-gama)
 
 ## Tutoriais
-Este repositório tem a finalidade de disponibilizar conteúdos relacionados a programação apresentandos tutorias das principais tecnologias do mercado. Força Gama
+Este repositório tem a finalidade de disponibilizar conteúdos relacionados a programação apresentando tutoriais das principais tecnologias do mercado. Força Gama
 
 | Tutoriais  | Descrição |
 | ------------- | ------------- |
