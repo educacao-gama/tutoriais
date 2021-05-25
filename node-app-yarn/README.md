@@ -38,11 +38,12 @@ yarn init
 ```
 Serão realizadas algumas perguntas relacionadas ao projeto como nome do projeto, version, nome do autor.
 
-1. Muitas das aplicações em Node.JS trabalham com a finalidade de prover APIs, logo precisaremos instalar o express para obter alguns de seus recursos.
+Muitas das aplicações em Node.JS trabalham com a finalidade de prover APIs, logo precisaremos instalar o express para obter alguns de seus recursos.
 ```
 yarn add express
 ```
 Abaixo segue imagem de estrutura do projeto
+
 ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/gama-xp-app.png)
 
 
