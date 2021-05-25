@@ -81,7 +81,7 @@ Primeiros passos para implementação do projeto:
    ```
    yarn add @types/express -D
    ```
-   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/tsnode.png)
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/types_express.png)
    
 1. No arquivo `src\server.ts` vamos iniciar nosso algorítimo para execução uma aplicação Node na porta 3000.
     ```
@@ -91,3 +91,10 @@ Primeiros passos para implementação do projeto:
 
    app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
    ```
+   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-yarn/server-ts.png)
+   
+1. Iniciando nosso servidor na porta 3000.
+   ```
+   yarn dev
+   ```
+   
