@@ -63,17 +63,18 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
       2. Em seguida na pasta `src\database` o arquivo `connection.ts` com o conteúdo abaixo:
       
        ```
-       import knex from 'knex';
-       import knexFile from '../../knexfile';
-       export default knex(knexFile['development']);
-       console.log("Conexão realizada com sucesso !")
+        import knex from 'knex';
+        import knexFile from '../../knexfile';
+        export default knex(knexFile['development']);
+        console.log("Conexão realizada com sucesso !")
+        
        ```
        
 * Com a conexão devidamente configurada, hora de integrar o knex ao nosso Controller para interagir com a base de dados.
      1. No arquivo `src\controllers\CadastroController.ts` vamos importar o `knex connection` através da linha abaixo:
      
      ```
-     import knex from '../database/connection';
+      import knex from '../database/connection';
      ```
      1. Tudo pronto para realizar nosso primeiro insert, update e select, mas precisamos criar nossa tabela de cadastro! É ai que entram as  `migrations`
      2. Crie a `migrations` pasta `src\database`
