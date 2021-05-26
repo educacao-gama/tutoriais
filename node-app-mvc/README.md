@@ -85,11 +85,11 @@ Então Vamos Neeessa ...
     1. POST: http://localhost:3000/cadastros
     
        ```
-       {"cpf":"18231108009","nome":"JOSE DA SILVA LIMA"}
+       {"cpf":"18231108009","nome":"JOSE DA SILVA"}
        ```
     
     1. PUT: http://localhost:3000/cadastros
 
          ```
-       {"cpf":"18231108009","nome":"JOSE DA SILVA"}
+       {"cpf":"18231108009","nome":"JOSE DA SILVA LIMA"}
        ```
