@@ -20,4 +20,6 @@ Então Vamos Neeessa ...
 
 #### Vamos iniciar nossa estrutura de controle correspondente pela regra de negócio da aplicação
 1. Criamos o novo diretório `src\controllers`
-2. Na pasta `controllers` vamos incluir nossos Controllers iniciando pelo `CadastronController.ts`
+1. Na pasta `controllers` vamos incluir nossos Controllers iniciando pelo `CadastroController.ts` para incluir, alterar e listar os cadastros do sistema através de requisições HTTP.
+ %%%¨%¨% codigo
+1. Depois do nosso controle implementado precisaremos configurar uma rota para requisições HTTP, e seguindo as boas práticas de desenvolvimento iremos criar o arquivo `src\routes.ts` contendo uma rota para todos os recursos disponíveis em nossos Controllers. 
