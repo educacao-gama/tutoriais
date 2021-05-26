@@ -70,6 +70,7 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
        
 * Com a conexão devidamente configurada, hora de integrar o knex ao nosso Controller para interagir com a base de dados.
      1. No arquivo `src\controllers\CadastroController.ts` vamos importar o `knex connection` através da linha abaixo:
+     
      ```
      import knex from '../database/connection';
      ```
