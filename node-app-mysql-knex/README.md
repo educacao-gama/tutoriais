@@ -74,4 +74,8 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
      ```
      import knex from '../database/connection';
      ```
+     1. Tudo pronto para realizar nosso primeiro insert, update e select, mas precisamos criar nossa tabela de cadastro! É ai que entram as  `migrations`
+     2. Crie a `migrations` pasta `src\database`
+     
+     
  
