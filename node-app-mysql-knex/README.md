@@ -94,15 +94,46 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
    
  #### Criando uma Migration:
 
- 1. Execute o comando:
+ * Execute o comando:
  ```
  knex migrate:make create_tab_cadastro
  ```
- 1. Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global e depos execute o comando anterior
+ * Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global para depois executar o comando anterior
  ```
  npm install -g knex
  ```
+ 
+ * Tudo rodando direitinho será criado um arquivo de nome `20210526150627_create_tab_cadastro.ts` onde o prefixo `20210526150627_` representa um valor data-hora de geração do arquivo.
 
-    
-    
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migration-tab-cadastro.png)
+
+
+ #### Uuuuufa em
+ 
+ Agora é hora de exercitar todo o domínio em estruturação da base dados para criarmos as tabelas da aplicação.
+ 
+ * Primeiro vamos criar a tabela tab_cadastro com os campos id, cpf e nome alterando o arquivo `20210526150627_create_tab_cadastro.ts`
+ ```
+import { Knex } from "knex";
+
+export async function up(knex: Knex): Promise<void> {
+    return await knex.schema.createTable('tab_cadastro', (table) => {
+        table.increments('id').unique();
+        table.specificType('cpf', 'VARCHAR(11)').notNullable().unique();
+        table.specificType('nome', 'VARCHAR(50)').notNullable();
+    });
+}
+
+export async function down(knex: Knex): Promise<void> {
+    return await knex.schema.dropTable('tab_cadastro');
+}
+ ```
+ 
+* Hora de executar nossas migrations e validar se nossa tab_cadastro foi criada
+
+```
+yarn knex migrate:latest
+```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migration-tab-cadastro.png)
     
