@@ -92,16 +92,17 @@ Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tab
 Down
 Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
    
-Criando uma Migration:
-    1. Execute o comando:
-    ```
-    knex migrate:make create_tab_cadastro
-    ```
-    1. Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global:
-    ```
-    yarn add global knex
-    ```
-    
+ #### Criando uma Migration:
+
+ 1. Execute o comando:
+ ```
+ knex migrate:make create_tab_cadastro
+ ```
+ 1. Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global e depos execute o comando anterior
+ ```
+ npm install -g knex
+ ```
+
     
     
     
