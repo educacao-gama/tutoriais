@@ -1,36 +1,81 @@
 # Gama Academy - Transformando Talentos para o Futuro
 
-## Node.JS - MySQL - KNex.JS
+## Node.JS - Padrão MVC
 
-Hora de interagir com banco de dados para armazenar e obter as informações de nossa aplicação.
+Refatorando nossa aplicação Node API de acordo com padrão MVC.
 
-KNex.JS ?
+O que é MVC ?
 
-Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipulação de registros  (DML) em uma base de dados relacional.
-
-Migrations ?
-É um recurso capaz de gerenciar a pasta estrutural do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
-
-Up
-Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tabelas, inserts, selects e tudo mais.
-
-Down
-Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
+Um padrão de desenvolvimento muito utilizado em desenvolvimento Web que divide as camadas de uma aplicação em Modelo (M), Visão (V), e Controle (C).
 
 #### Autores
 - [Gleyson Sampaio](https://github.com/gleyson-gama)
 
 #### Requisitos
-[Exemplo de aplicação Node.JS com padrão MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)
+[Criando APIs simples com Node.JS](https://github.com/educacao-gama/tutoriais/tree/main/node-app-api)
 
+Não se assuste quanto as alterações que teremos que realizar em nossa aplicação para torna-la conforme o padrão MVC, é por esta razão que é relevante conhecer de alguns padrãoes de desenvolvimento antes mesmo de implementar as funcionalidades de uma aplicação.
+Então Vamos Neeessa ...
 
-#### Integrando o KNex na aplicação
-1. Adicionamos as dependências do `knex` e ou do drive do banco de sua preferência, no nosso caso o  `mysql2`.
-   ```
-   yarn add knex
-   ```
-   
-   ```
-   yarn add mysql2
+#### Vamos iniciar nossa estrutura de controle correspondente pela regra de negócio da aplicação
+1. Criamos o novo diretório `src\controllers`
+1. Na pasta `controllers` vamos incluir nossos Controllers iniciando pelo `CadastroController.ts` para incluir, alterar e listar os cadastros do sistema através de requisições HTTP.
+ ```
+   import { Request, Response } from 'express';
+   export default {
+       async list(req: Request, res: Response) {
+           var result=[{id:1, cpf:"09329314058", nome:"JOSE DA SILVA"},{id:2, cpf:"01135196052", nome:"MARIA DE LOURDES"}];
+           return res.status(200).json({ data:result});
+       },
+       async create(req: Request, res: Response) {
+           const { nome, cpf} = req.body;
+           const id=3;
+           const data = {id,nome,cpf};
+           return res.status(201).json({ data:data});
+       },
+       async update(req: Request, res: Response) {
+           const { nome, cpf} = req.body;
+           const dataAlteracao = '30/05/2021 16:00'
+           const cadastro = {nome,cpf,dataAlteracao};
+           cadastro.nome = "JOSE DA SILVA LIMA";
+           return res.status(200).json({ data:cadastro});
+       }
+   }
    ```
  
+ ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/cadastro_controller.png)
+ 
+1. Depois do nosso controle implementado precisaremos configurar uma rota para requisições HTTP, e seguindo as boas práticas de desenvolvimento iremos criar o arquivo `src\routes.ts` contendo uma rota para todos os recursos disponíveis em nossos Controllers.
+
+ ```
+  import { Router } from 'express';
+  import CadastroController from './controllers/CadastroController';
+
+   const routes = Router();
+
+   routes.get('/cadastros', CadastroController.list);
+   routes.post('/cadastros', CadastroController.create);
+   routes.put('/cadastros', CadastroController.update);
+
+   export default routes;
+
+   ```
+ ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/routes-cadastro.png)
+ 
+1. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
+   1. Primeiro remover a rota de teste com a mensagem de "Boas Vindas"
+   1. Carregar a configuração das rotas na inicialização da aplicação.
+   
+   ```
+   import express from 'express';
+
+   import routes from './routes';
+
+   const app = express();
+   //depois de receber erro: TypeError: Cannot read property 'prop' of undefined 
+   app.use(express.json());
+   app.use(routes);
+   app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
+
+   ```
+ ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/serverts.png)
