@@ -33,6 +33,6 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
    ```
    yarn add mysql2
    ```
- 1. E agora uma conferido em nossas dependências no arquivo `package.json`
+ 1. E agora uma conferida em nossas dependências no arquivo `package.json`
  
   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/knex-mysql.png)
