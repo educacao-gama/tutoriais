@@ -94,14 +94,16 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
    
  #### Criando uma Migration:
 
- 1. Execute o comando:
+ * Execute o comando:
  ```
  knex migrate:make create_tab_cadastro
  ```
- 1. Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global e depos execute o comando anterior
+ * Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global para depois executar o comando anterior
  ```
  npm install -g knex
  ```
+ 
+ * Tudo rodando direitinho será criado um arquivo de nome `20210526150627_create_tab_cadastro.ts` onde o prefixo `20210526150627_` representa um valor data-hora de geração do arquivo.
 
     
     
