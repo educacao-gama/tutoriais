@@ -57,4 +57,12 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
     },
    };
    ```
-  
+   1. Com o arquivo `knexfile.ts` contendo as configurações de banco, vamos iniciar a conexão ao MySQL
+      1. Primeiro crie a pasta `src\database`
+      2. Em seguida na pasta `src\database` o arquivo `connection.ts` com o conteúdo abaixo:
+       ```
+       import knex from 'knex';
+       import knexFile from '../../knexfile';
+       export default knex(knexFile['development']);
+       console.log("Conexão realizada com sucesso !")
+       ```
