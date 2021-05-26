@@ -189,7 +189,7 @@ routes.delete('/cadastros/:id', CadastroController.delete);
 export default routes;
 
  ```
- 1. E claro no arquivo `CadastroController.ts` implementar as funcionalidade CRUD para a tabela tab_cadastro
+ 1. E claro no arquivo `CadastroController.ts` implementar as funcionalidades de CRUD para a tabela tab_cadastro
   ```
  import { Request, Response } from 'express';
 
