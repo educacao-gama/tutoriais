@@ -30,7 +30,8 @@ Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipu
   
  #### Conectando ao banco de dados MySQL
  
- O Knex é compatível com qualquer banco de dados relacional conforme link [](http://knexjs.org/).
+ O Knex é compatível com qualquer banco de dados relacional conforme link [knex](http://knexjs.org/)
+ 
  Em nosso projeto será utilizado o MySQL com a seguinte configuração abaixo:
  
  * Criar o arquivo `knexfile.ts` no mesmo nível da pasta `src.ts`, este arquivo contém as propriedades para conectar ao banco MySQL
