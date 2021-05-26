@@ -61,6 +61,21 @@ Então Vamos Neeessa ...
 
    ```
  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/routes-cadastro.png)
-3. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
+ 
+1. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
    1. Primeiro remover a rota de teste com a mensagem de "Boas Vindas"
-   1. Carregar a configuração das rotas na inicialização da aplicação.    
+   1. Carregar a configuração das rotas na inicialização da aplicação.
+   
+   ```
+   import express from 'express';
+
+   import routes from './routes';
+
+   const app = express();
+   //depois de receber erro: TypeError: Cannot read property 'prop' of undefined 
+   app.use(express.json());
+   app.use(routes);
+   app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
+
+   ```
+ ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/serverts.png)
