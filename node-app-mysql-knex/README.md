@@ -36,3 +36,8 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  1. E agora uma conferida em nossas dependências no arquivo `package.json`
  
   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/knex-mysql.png)
+  
+ #### Conectando ao banco de dados MySQL
+ 
+ O Knex é compatiível com qualquer banco de dados relacional conforme link ![](http://knexjs.org/)
+  
