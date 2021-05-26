@@ -22,4 +22,7 @@ Então Vamos Neeessa ...
 1. Criamos o novo diretório `src\controllers`
 1. Na pasta `controllers` vamos incluir nossos Controllers iniciando pelo `CadastroController.ts` para incluir, alterar e listar os cadastros do sistema através de requisições HTTP.
  %%%¨%¨% codigo
-1. Depois do nosso controle implementado precisaremos configurar uma rota para requisições HTTP, e seguindo as boas práticas de desenvolvimento iremos criar o arquivo `src\routes.ts` contendo uma rota para todos os recursos disponíveis em nossos Controllers. 
+1. Depois do nosso controle implementado precisaremos configurar uma rota para requisições HTTP, e seguindo as boas práticas de desenvolvimento iremos criar o arquivo `src\routes.ts` contendo uma rota para todos os recursos disponíveis em nossos Controllers.
+1. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
+   1. Primeiro remover a rota de teste com a mensagem de "Boas Vindas"
+   1. Carregar a configuração das rotas na inicialização da aplicação.    
