@@ -128,5 +128,12 @@ export async function down(knex: Knex): Promise<void> {
     return await knex.schema.dropTable('tab_cadastro');
 }
  ```
-    
+ 
+* Hora de executar nossas migrations e validar se nossa tab_cadastro foi criada
+
+```
+yarn knex migrate:latest
+```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migration-tab-cadastro.png)
     
