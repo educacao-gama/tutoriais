@@ -17,3 +17,7 @@ Um padrão de desenvolvimento muito utilizado em desenvolvimento Web que divide 
 
 Não se assuste quanto as alterações que teremos que realizar em nossa aplicação para torna-la conforme o padrão MVC, é por esta razão que é relevante conhecer de alguns padrãoes de desenvolvimento antes mesmo de implementar as funcionalidades de uma aplicação.
 Então Vamos Neeessa ...
+
+#### Vamos iniciar nossa estrutura de controle correspondente pela regra de negócio da aplicação
+1. Criamos o novo diretório `src\controllers`
+2. Na pasta `controllers` vamos incluir nossos Controllers iniciando pelo `CadastronController.ts`
