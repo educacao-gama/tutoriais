@@ -88,4 +88,5 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
             directory: path.resolve(__dirname, 'src', 'database', 'seeds'),
         }
      ```
- 
+    
+     ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/knex-migration.png)
