@@ -2,6 +2,9 @@
 
 ## Node.JS - MySQL - KNex.JS
 
+#### Autores
+- [Gleyson Sampaio](https://github.com/gleyson-gama)
+
 Hora de interagir com banco de dados para armazenar e obter as informações de nossa aplicação.
 
 KNex.JS ?
@@ -16,9 +19,6 @@ Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tab
 
 Down
 Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
-
-#### Autores
-- [Gleyson Sampaio](https://github.com/gleyson-gama)
 
 #### Requisitos
 [Exemplo de aplicação Node.JS com padrão MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)
