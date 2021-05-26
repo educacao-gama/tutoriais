@@ -1,48 +1,28 @@
 # Gama Academy - Transformando Talentos para o Futuro
 
-## Node.JS - APIs
+## Node.JS - Padrão MVC
 
-Criando APIs simples com Node.JS
+Refatorando nossa aplicação Node API de acordo com padrão MVC.
+
+O que é MVC ?
+
+Um padrão de desenvolvimento muito utilizado em desenvolvimento Web que divide as camadas de uma aplicação em Modelo(M), Visão (V), e Controle(C).
+
 
 #### Autores
 - [Gleyson Sampaio](https://github.com/gleyson-gama)
 
 #### Requisitos
-[Iniciando um projeto Node.JS com NPM e Yarn - No WINDOWS](https://github.com/educacao-gama/tutoriais/tree/main/node-app-yarn)
+[Criando APIs simples com Node.JS](https://github.com/educacao-gama/tutoriais/tree/main/node-app-api)
 
-Com base no nosso projeto Node.JS com Yarn iremos criaremos rotas ou serviços APIs para gerenciamento de filmes conforme dados ilustrativos abaixo.
+Não se assuste quanto as alterações que teremos que realizar em nossa aplicação para torna-la conforme o padrão MVC, é por esta razão que é relevante conhecer de alguns padrãoes de desenvolvimento antes mesmo de implementar as funcionalidades de uma aplicação.
+Então Vamos Neeessa ...
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-api/filme.png)
-
-###### Fonte: https://www.adorocinema.com/filmes/filme-268680/
-
-
-Conhecendo um pouco sobre o que é API Rest.
-API Rest é uma interface que possibilidade a interação entre sistemas tranferindo conteúdo em possíveis formatos como: JSON, XML, TEXT etc.
-Esta interação são requisições de criação de conteúdo: POST, alteração: PUT, buscas: GET, remoção: DELETE entre outras.
-Conheça um pouco mais sobre Arquitetura REST, Restfull, APIs
-
-Criando nossa primeira rota \ serviço para retornar uma mensagem no formato `.json` com a seguinte estrutura:
-
-1. No arquivo `src\server.ts` vamos incluir nossa rota do tipo `GET` para retornar a mensagem com a estrutura abaixo:
-   ```
-    import express, { request, response } from 'express';
-
-    const app = express();
-
-    app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
-
-    app.get("/",(request, response) => {
-        return response.json({mensagem:"Bem-vindes ao Gama - XP", ano:2021});
-    });
-   ```
-   
-  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-api/get-mensagem.png)
-
-1. Acessando a URL: `http://localhost:3000/` deverá ser apresentando a mensagem abaixo: 
-   ```
-   {"mensagem":"Bem-vindes ao Gama - XP","ano":2021}
-   ```
-
-
-
+#### Vamos iniciar nossa estrutura de controle correspondente pela regra de negócio da aplicação
+1. Criamos o novo diretório `src\controllers`
+1. Na pasta `controllers` vamos incluir nossos Controllers iniciando pelo `CadastroController.ts` para incluir, alterar e listar os cadastros do sistema através de requisições HTTP.
+ %%%¨%¨% codigo
+1. Depois do nosso controle implementado precisaremos configurar uma rota para requisições HTTP, e seguindo as boas práticas de desenvolvimento iremos criar o arquivo `src\routes.ts` contendo uma rota para todos os recursos disponíveis em nossos Controllers.
+1. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
+   1. Primeiro remover a rota de teste com a mensagem de "Boas Vindas"
+   1. Carregar a configuração das rotas na inicialização da aplicação.    
