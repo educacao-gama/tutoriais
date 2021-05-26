@@ -237,4 +237,7 @@ export default {
 }
  ```
 1. Agora é testar através de algum cliente API como o insomnia (abaixo terá o import das requisições realizadas para teste)
+
+ [insomnia-requests.json](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/insomnia-api-xp-gama.json)
+ ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/api-client.png)
  
