@@ -236,4 +236,5 @@ export default {
     },
 }
  ```
+1. Agora é testar através de algum cliente API como o insomnia (abaixo terá o import das requisições realizadas para teste)
  
