@@ -163,6 +163,6 @@ yarn knex migrate:latest
       (id, cpf, nome)
       VALUES(4, '72931182010', 'FAUSTINO ANTUNES');
       ```
-
-
+   1. Conforme imagem, nossa consulta de cadastros no banco de dados funcinou, hora de implementar as demais interções no banco
+      ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migrations-run.png)
 
