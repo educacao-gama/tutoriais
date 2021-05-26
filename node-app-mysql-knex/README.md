@@ -39,5 +39,8 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
   
  #### Conectando ao banco de dados MySQL
  
- O Knex é compatiível com qualquer banco de dados relacional conforme link ![](http://knexjs.org/)
+ O Knex é compatiível com qualquer banco de dados relacional conforme link [](http://knexjs.org/).
+ Em nosso projeto será utilizado o MySQL com a seguinte configuração abaixo:
+ 
+ 1. Criar o arquivo `knexfile.ts` nas pasta `src`, este arquivo contém a funcionalidade de conectar ao banco MySQL
   
