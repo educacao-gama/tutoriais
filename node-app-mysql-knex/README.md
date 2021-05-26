@@ -135,5 +135,5 @@ export async function down(knex: Knex): Promise<void> {
 yarn knex migrate:latest
 ```
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migration-tab-cadastro.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migrations-run.png)
     
