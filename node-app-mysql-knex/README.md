@@ -112,7 +112,7 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  
  Agora é hora de exercitar todo o domínio em estruturação da base dados para criarmos as tabelas da aplicação.
  
- * Primeiro vamos criar a tabela tab_cadastro com os campos id, cpf e nome
+ * Primeiro vamos criar a tabela tab_cadastro com os campos id, cpf e nome alterando o arquivo `20210526150627_create_tab_cadastro.ts`
  ```
 import { Knex } from "knex";
 
