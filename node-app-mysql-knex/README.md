@@ -84,10 +84,24 @@ Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipu
      
  #### Migrations ?
  
-   É um recurso capaz de gerenciar a pasta estrutural do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
+É um recurso capaz de gerenciar estrutura do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
 
-   Up
-   Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tabelas, inserts, selects e tudo mais.
+Up
+Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tabelas, inserts, selects e tudo mais.
 
-   Down
-   Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
+Down
+Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
+   
+Criando uma Migration:
+    1. Execute o comando:
+    ```
+    knex migrate:make create_tab_cadastro
+    ```
+    1. Se receber o erro "'knex' não é reconhecido como um comando interno" será necessário instalar o knex de forma global:
+    ```
+    yarn add global knex
+    ```
+    
+    
+    
+    
