@@ -166,3 +166,74 @@ yarn knex migrate:latest
    1. Conforme imagem, nossa consulta de cadastros no banco de dados funcinou, hora de implementar as demais interções no banco
       ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migrations-run.png)
 
+ #### Últimos detalhes
+ 
+ 1. No arquivo `server.ts` incluir o recurso de requisição para `json`
+ ```
+ app.use(express.json());
+ ```
+ 
+  1. No arquivo `routes.ts` registrar as novas rotas
+ ```
+ import { Router } from 'express';
+import CadastroController from './controllers/CadastroController';
+
+const routes = Router();
+
+routes.get('/cadastros', CadastroController.list);
+routes.get('/cadastros/:id', CadastroController.find);
+routes.post('/cadastros', CadastroController.create);
+routes.put('/cadastros/:id', CadastroController.update);
+routes.delete('/cadastros/:id', CadastroController.delete);
+
+export default routes;
+
+ ```
+ 1. E claro no arquivo `CadastroController.ts` implementar as funcionalidade CRUD para a tabela tab_cadastro
+  ```
+ import { Request, Response } from 'express';
+
+import knex from '../database/connection';
+
+export default {
+    async list(req: Request, res: Response) {
+        var result=await knex('tab_cadastro').orderBy('nome');
+        
+        return res.status(200).json({ data:result});
+    },
+    async find(req: Request, res: Response) {
+        const { id } = req.params;
+        
+        const user = await knex('tab_cadastro').where({ id });
+        
+        return res.status(200).json(user);
+    },
+    async create(req: Request, res: Response) {
+        const { cpf, nome} = req.body;
+        const data = {cpf,nome};
+
+        await knex('tab_cadastro').insert(data);
+        
+        return res.status(201).json(data);
+    },
+    async update(req: Request, res: Response) {
+        const { id } = req.params;
+        const { nome, cpf} = req.body;
+
+        const data = {cpf,nome};
+
+        await knex('tab_cadastro').update(data).where({ id });
+
+        const user = await knex('tab_cadastro').where({ id });
+        
+        return res.status(200).json(user);
+        
+    },
+    async delete(req: Request, res: Response) {
+        const { id } = req.params;
+        await knex('tab_cadastro').del().where({ id });
+        return res.status(200).json({ message: 'Registro excluido com sucesso!' });
+    },
+}
+ ```
+ 
