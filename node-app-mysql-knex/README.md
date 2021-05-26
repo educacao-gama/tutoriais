@@ -7,18 +7,9 @@
 
 Hora de interagir com banco de dados para armazenar e obter as informações de nossa aplicação.
 
-KNex.JS ?
+#### KNex.JS ?
 
 Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipulação de registros  (DML) em uma base de dados relacional.
-
-Migrations ?
-É um recurso capaz de gerenciar a pasta estrutural do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
-
-Up
-Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tabelas, inserts, selects e tudo mais.
-
-Down
-Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
 
 #### Requisitos
 [Exemplo de aplicação Node.JS com padrão MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)
@@ -76,7 +67,7 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
       import knex from '../database/connection';
      ```
      1. Tudo pronto para realizar nosso primeiro insert, update e select, mas precisamos criar nossa tabela de cadastro! É ai que entram as  `migrations`
-     2. Crie a pasta `migrations` pasta `src\database`
+     2. Crie a pasta `migrations` na pasta `src\database`
      3. Em seguida precisaremos incluir mais duas configurações no arquivo `knexfile.ts`
      
      ```
@@ -90,3 +81,13 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
      ```
     
      ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/knex-migration.png)
+     
+ #### Migrations ?
+ 
+   É um recurso capaz de gerenciar a pasta estrutural do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
+
+   Up
+   Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tabelas, inserts, selects e tudo mais.
+
+   Down
+   Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
