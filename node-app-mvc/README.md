@@ -46,6 +46,21 @@ Então Vamos Neeessa ...
  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/cadastro_controller.png)
  
 1. Depois do nosso controle implementado precisaremos configurar uma rota para requisições HTTP, e seguindo as boas práticas de desenvolvimento iremos criar o arquivo `src\routes.ts` contendo uma rota para todos os recursos disponíveis em nossos Controllers.
-1. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
+
+ ```
+  import { Router } from 'express';
+  import CadastroController from './controllers/CadastroController';
+
+   const routes = Router();
+
+   routes.get('/cadastros', CadastroController.list);
+   routes.post('/cadastros', CadastroController.create);
+   routes.put('/cadastros', CadastroController.update);
+
+   export default routes;
+
+   ```
+ ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/routes-cadastro.png)
+3. Antes de executar nossa aplicação, precisamos fazer alguns ajustes no arquivo `server.ts`.
    1. Primeiro remover a rota de teste com a mensagem de "Boas Vindas"
    1. Carregar a configuração das rotas na inicialização da aplicação.    
