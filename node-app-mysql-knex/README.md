@@ -105,6 +105,8 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  
  * Tudo rodando direitinho será criado um arquivo de nome `20210526150627_create_tab_cadastro.ts` onde o prefixo `20210526150627_` representa um valor data-hora de geração do arquivo.
 
+![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migration-tab-cadastro.png)
+
     
     
     
