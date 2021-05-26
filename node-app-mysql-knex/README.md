@@ -138,4 +138,31 @@ yarn knex migrate:latest
 ```
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migrations-run.png)
-    
+
+* Agora vamos executar os comandos SQL através do `Knex` em nosso `CadastroController.ts`
+   1. Importe o knex no controlador.
+      ```
+      import knex from '../database/connection';
+      ```
+   1. No método `list`, altere o valor da variável `result` para:
+      ```
+      var result=await knex('tab_cadastro').orderBy('nome');
+      ```
+   1. Se preferir insira estes dados direto no banco de dados:
+      ```
+      INSERT INTO db_xp.tab_cadastro
+      (id, cpf, nome)
+      VALUES(1, '18231108009', 'JOSE DA SILVA');
+      INSERT INTO db_xp.tab_cadastro
+      (id, cpf, nome)
+      VALUES(2, '02243950090', 'MARIA ALMEIDA');
+      INSERT INTO db_xp.tab_cadastro
+      (id, cpf, nome)
+      VALUES(3, '82278087002', 'MARCOS PAULO SANTOS');
+      INSERT INTO db_xp.tab_cadastro
+      (id, cpf, nome)
+      VALUES(4, '72931182010', 'FAUSTINO ANTUNES');
+      ```
+
+
+
