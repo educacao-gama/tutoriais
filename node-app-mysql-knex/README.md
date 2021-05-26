@@ -42,7 +42,7 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  O Knex é compatível com qualquer banco de dados relacional conforme link [](http://knexjs.org/).
  Em nosso projeto será utilizado o MySQL com a seguinte configuração abaixo:
  
- 1. Criar o arquivo `knexfile.ts` no mesmo nível da pasta `src.ts`, este arquivo contém as propriedades para conectar ao banco MySQL
+ * Criar o arquivo `knexfile.ts` no mesmo nível da pasta `src.ts`, este arquivo contém as propriedades para conectar ao banco MySQL
  
    ```
    export default {
@@ -57,7 +57,8 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
     },
    };
    ```
-   1. Com o arquivo `knexfile.ts` contendo as configurações de banco, vamos iniciar a conexão ao MySQL
+   
+ * Com o arquivo `knexfile.ts` contendo as configurações de banco, vamos iniciar a conexão ao MySQL
       1. Primeiro crie a pasta `src\database`
       2. Em seguida na pasta `src\database` o arquivo `connection.ts` com o conteúdo abaixo:
        ```
@@ -66,3 +67,10 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
        export default knex(knexFile['development']);
        console.log("Conexão realizada com sucesso !")
        ```
+       
+* Com a conexão devidamente configurada, hora de integrar o knex ao nosso Controller para interagir com a base de dados.
+     1. No arquivo `src\controllers\CadastroController.ts` vamos importar o `knex connection` através da linha abaixo:
+     ```
+     import knex from '../database/connection';
+     ```
+ 
