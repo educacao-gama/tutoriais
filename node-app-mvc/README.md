@@ -79,3 +79,17 @@ Então Vamos Neeessa ...
 
    ```
  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mvc/serverts.png)
+ 
+ 1. Tudo configurado, vamos testar a nossa API, com alguma client HTTP como Postman, Insomnia realizar as requisições abaixo:
+    1. GET: http://localhost:3000/cadastros
+    1. POST: http://localhost:3000/cadastros
+    
+       ```
+       {"cpf":"18231108009","nome":"JOSE DA SILVA"}
+       ```
+    
+    1. PUT: http://localhost:3000/cadastros
+
+         ```
+       {"cpf":"18231108009","nome":"JOSE DA SILVA"}
+       ```
