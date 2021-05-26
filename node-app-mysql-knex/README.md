@@ -107,6 +107,26 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/migration-tab-cadastro.png)
 
-    
+
+ #### Uuuuufa em
+ 
+ Agora é hora de exercitar todo o domínio em estruturação da base dados para criarmos as tabelas da aplicação.
+ 
+ * Primeiro vamos criar a tabela tab_cadastro com os campos id, cpf e nome
+ ```
+import { Knex } from "knex";
+
+export async function up(knex: Knex): Promise<void> {
+    return await knex.schema.createTable('tab_cadastro', (table) => {
+        table.increments('id').unique();
+        table.specificType('cpf', 'VARCHAR(11)').notNullable().unique();
+        table.specificType('nome', 'VARCHAR(50)').notNullable().unique();
+    });
+}
+
+export async function down(knex: Knex): Promise<void> {
+    return await knex.schema.dropTable('tab_cadastro');
+}
+ ```
     
     
