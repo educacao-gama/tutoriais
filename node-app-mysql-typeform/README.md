@@ -1,11 +1,15 @@
 # Gama Academy - Transformando Talentos para o Futuro
 
-## Node.JS - MySQL - KNex.JS
+## Node.JS - MySQL - ORM - TypeOrm
 
 #### Autores
 - [Gleyson Sampaio](https://github.com/gleyson-gama)
 
-Hora de interagir com banco de dados para armazenar e obter as informações de nossa aplicação.
+Melhoraremos a nossa de repositorio com o conceito de ORM com TypeOrm
+
+Type ORM? [link](https://typeorm.io/#/)
+
+Um recurso em Node.JS para disponibilizar umas das implementações do conceito ORM em conversão de dados em objetos e vice-versa .
 
 #### KNex.JS ?
 
