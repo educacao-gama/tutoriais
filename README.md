@@ -13,4 +13,4 @@ Este repositório tem a finalidade de disponibilizar conteúdos relacionados a p
 | [Node.Js - API](https://github.com/educacao-gama/tutoriais/tree/main/node-app-api)  | Exemplo de uma API com Node.JS e Express  |
 | [Node APP - MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)  | Exemplo de aplicação Node.JS com padrão MVC  |
 | [Node APP - MySQL - Knex](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mysql-knex)  | Exemplo de aplicação Node.JS MySQL Nativo e Knex  |
-| [Node APP - MySQL - ORM](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mysql-typeform)  | Exemplo de aplicação Node.JS MySQL e uso de ORM com TypeOrm  |
+| [Node APP - MySQL - Type - ORM](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mysql-type-orm)  | Exemplo de aplicação Node.JS MySQL e uso de ORM com TypeOrm  |
