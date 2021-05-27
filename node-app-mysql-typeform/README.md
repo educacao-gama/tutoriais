@@ -1,12 +1,12 @@
 # Gama Academy - Transformando Talentos para o Futuro
 
-## Node.JS - MySQL - KNex.JS
+## Node.JS - MySQL - ORM - TypeOrm
 
-Hora de interagir com banco de dados para armazenar e obter as informações de nossa aplicação.
+Melhoraremos a nossa de repositorio com o conceito de ORM com TypeOrm
 
-KNex.JS ?
+Type ORM? [link](https://typeorm.io/#/)
 
-Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipulação de registros  (DML) em uma base de dados relacional.
+Um recurso em Node.JS para disponibilizar umas das implementações do conceito ORM em conversão de dados em objetos e vice-versa .
 
 Migrations ?
 É um recurso capaz de gerenciar a pasta estrutural do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
