@@ -27,7 +27,7 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
    yarn add mysql2
    ```
    
- 1. E agora uma conferida em nossas dependências no arquivo `package.json`
+ 1.Nesta parte seguiremos as intruções do próprio [site](https://typeorm.io/#/using-ormconfig) criando primeiramento o arquivo `ormconfig.json` pasta `src` 
  
   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/knex-mysql.png)
   
