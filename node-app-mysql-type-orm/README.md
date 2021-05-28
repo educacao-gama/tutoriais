@@ -69,7 +69,7 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  
  * Para criar as migrations precisaram exectar o cli do TypeOrm, basta incluir dentro de script no arquivo `package.json`:
  ```
- "typeorm":"ts-node-dev node_modules/typeorm/cli.ts" 
+ "typeorm":"ts-node-dev node_modules/typeorm/cli.js" 
  ```
  * Com o cli do TypeOrm configurado alteramos o arquivo `ormconfig.json` para executar a cli configurada:
  
