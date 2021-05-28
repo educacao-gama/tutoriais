@@ -175,7 +175,7 @@ export {Cliente}
 "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
 ```
 
-* Ao persistir com framework ORM, o mesmo prové de mecanismos de repositório que dispõe de métodos CRUD sobre a entidade declarara, com isso dentro de `src` crie a pasta `repositories` e dentro de repositories os arquivo  `ClienteRepository` com o código abaixo.
+* Ao persistir com framework ORM, o mesmo prové de mecanismos de repositório que dispõe de métodos CRUD sobre a entidade declarara, com isso dentro de `src` crie a pasta `repositories` e dentro de repositories o arquivo  `ClienteRepository` com o código abaixo.
 
 ```
 import {EntityRepository, Repository} from "typeorm";
@@ -189,3 +189,4 @@ class ClienteRepository extends Repository <Cliente> {
 export {Cliente}
 ```
 
+* Tudo configurado com nossa entidade Cliente e seu repositório, partimos para a criação do controller, para isso dentro de `src` crie a pasta `controllers` e dentro de controllers o arquivo  `ClienteController` com o código abaixo. 
