@@ -123,10 +123,10 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
  * Hora de validar se nossa tabela será criada com base nas configurações acima.
  * Criando a tabela
  ``` TERMINAL
- typeorm migration:run
+ yarn typeorm migration:run
  ```
  * Removendo (Revertendo) a instrução anterior
  ``` TERMINAL
- typeorm migration:revert
+ yarn typeorm migration:revert
  ```
 
