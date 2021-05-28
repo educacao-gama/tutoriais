@@ -46,3 +46,20 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
 
    createConnection();
    ```
+   
+#### Migrations ?
+ 
+É um recurso capaz de gerenciar estrutura do banco de dados como criação de tabelas, alteração de colunas e etc. Cada migration contem 2 métodos principais que são:
+
+Up
+Dentro dele é colocado tudo o que tem que ser criado no banco de dados. Ex: tabelas, inserts, selects e tudo mais.
+
+Down
+Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOWN, criei uma tabela na UP, dou drop na DOWN
+   
+ #### Criando uma Migration com Type ORM:
+
+ * Execute o comando:
+ ```
+ knex migrate:make create_tab_cadastro
+ ```
