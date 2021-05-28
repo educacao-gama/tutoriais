@@ -189,4 +189,35 @@ class ClienteRepository extends Repository <Cliente> {
 export {Cliente}
 ```
 
-* Tudo configurado com nossa entidade Cliente e seu repositório, partimos para a criação do controller, para isso dentro de `src` crie a pasta `controllers` e dentro de controllers o arquivo  `ClienteController` com o código abaixo. 
+* Tudo configurado com nossa entidade Cliente e seu repositório, partimos para a criação do controller, para isso dentro de `src` crie a pasta `controllers` e dentro de controllers o arquivo  `ClienteController` com o código abaixo.
+
+* Para testar nosso crud de Cliente agora nos resta definir as rotas para obter os recursos HTTP criando o arquivo `src\routes.ts` com o código abaixo:
+```
+import { Router } from 'express';
+import ClienteController from './controllers/ClienteController';
+
+const routes = Router();
+
+routes.get('/Clientes', ClienteController.list);
+routes.get('/Clientes/:id', ClienteController.find);
+routes.post('/Clientes', ClienteController.create);
+routes.put('/Clientes/:id', ClienteController.update);
+routes.delete('/Clientes/:id', ClienteController.delete);
+
+export default routes;
+```
+
+Em seguida ajustando o nosso arquivo server.ts para importar e inicializar as rotas conforme codigo abaixo:
+```
+import express from 'express';
+
+import routes from './routes';
+
+const app = express();
+//depois de receber erro: TypeError: Cannot read property 'prop' of undefined 
+app.use(express.json());
+app.use(routes);
+app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
+
+```
+
