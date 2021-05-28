@@ -93,3 +93,34 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  
   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-type-orm/migration-tab_cliente.png)
   
+  * Após o arquivo criado incluir o código que represente o DLL da tabela correspondente. NOTA: Esta fase exige bastantes noções de banco de dados e mapeamento de objetos
+  
+ ``` TERMINAL
+ import {MigrationInterface, QueryRunner, Table} from "typeorm";
+
+export class CreateTabCliente1622163365363 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_user",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "cpf_cnpj", type: "varchar", length: "15"},
+                    {name: "nome", type: "varchar", length: "50"},
+                    {name: "ativo", type: "boolean", default: true},
+                    {name: "dt_inclusao", type: "timestamp", default: "now()"},
+                    {name: "dt_alteracao", type: "timestamp", default: "now()"},      
+                ]
+            })
+        )
+    }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_usuario")
+    }
+
+}
+
+ 
+ ```
