@@ -126,6 +126,9 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
  ``` TERMINAL
  yarn typeorm migration:run
  ```
+ 
+  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-type-orm/migration-run.png)
+ 
  * Removendo (Revertendo) a instrução anterior
  ``` TERMINAL
  yarn typeorm migration:revert
