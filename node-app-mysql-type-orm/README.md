@@ -19,15 +19,18 @@ Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipu
 [Exemplo de aplicação Node.JS com padrão MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)
 
 
-#### Integrando o KNex na aplicação
-1. Adicionamos as dependências do `knex` e ou do drive do banco de sua preferência, no nosso caso o  `mysql2`.
+#### Integrando o TypeOrm na aplicação
+1. Adicionamos as dependências do `typeorm` e ou do drive do banco de sua preferência, no nosso caso o  `mysql2`.
+
    ```
-   yarn add knex
+   yarn add typeorm
+   yarn add reflect-metadata
    ```
    
    ```
    yarn add mysql2
    ```
+   
  1. E agora uma conferida em nossas dependências no arquivo `package.json`
  
   ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-knex/knex-mysql.png)
