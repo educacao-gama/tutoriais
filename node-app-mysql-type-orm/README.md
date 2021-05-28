@@ -79,7 +79,9 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
     }
  ```
  
- #### Implemetando o modelo de negócio
+ #### Criando uma Migration com Type ORM:
+ 
+ Implemetando o modelo de negócio
  
  Com base eum projeto de pedidos estilo ecommerce temos um modelo de domínio e relacionamento entre tabelas que precisarão ser mapeadas e interagir com a base de dados.
  
@@ -135,4 +137,35 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
  ``` TERMINAL
  yarn typeorm migration:revert
  ```
+#### Mapeando a entidade Cliente.ts:
 
+ * Dentro de `src` crie a pasta `entities` e dentro de entitites crie o arquivo `Cliente.ts` com o código abaixo:
+ 
+ ``` TERMINAL
+ import {Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryColumn,PrimaryGeneratedColumn } from "typeorm";
+
+@Entity("tab_user")
+class Cliente{
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column({name:"cpf_cnpj"})
+    cpfCnpj: string;
+    
+    @Column()
+    nome: string;
+    
+    @Column()
+    ativo: boolean;
+    
+    @CreateDateColumn({name:"dt_inclusao"})
+    dataInclusao: Date
+
+    @UpdateDateColumn({name:"dt_alteracao"})
+    dataAlteracao: Date
+
+    
+}
+export {Cliente}
+ ```
+ 
