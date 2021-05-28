@@ -39,7 +39,7 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
     "database": "xp_db"
    }
    ```
-   1. Em seguida criar uma conexão com base nas configurações acima atráves do novo arquivo `index.ts` dentro da nova pasta `database` com o seguinte conteúdo:
+   1. Em seguida criar uma conexão com base nas configurações acima atráves do novo arquivo `index.ts` dentro da nova pasta `src\database` com o seguinte conteúdo:
    
    ```
    import {createConnection} from 'typeorm';
@@ -60,6 +60,12 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  #### Criando uma Migration com Type ORM:
 
  * Dentro da pasta `database` criar a pasta `migrations`
+ 
+ * Altere o arquivo `ormconfig.json` definindo o(s) diretórios(s) que ficarão os arquivos criados para estruturação da base de dados
+ 
+ ```
+ "migrations":["./src/database/migrations/**.ts"]
+ ```
  
  * Execute o comando:
  ```
