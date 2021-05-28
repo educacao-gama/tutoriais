@@ -7,13 +7,9 @@
 
 Melhoraremos a nossa de repositorio com o conceito de ORM com TypeOrm
 
-Type ORM? [link](https://typeorm.io/#/)
+#### Type ORM? [link](https://typeorm.io/#/)
 
 Um recurso em Node.JS para disponibilizar umas das implementações do conceito ORM em conversão de dados em objetos e vice-versa .
-
-#### KNex.JS ?
-
-Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipulação de registros  (DML) em uma base de dados relacional.
 
 #### Requisitos
 [Exemplo de aplicação Node.JS com padrão MVC](https://github.com/educacao-gama/tutoriais/tree/main/node-app-mvc)
