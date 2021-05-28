@@ -82,6 +82,13 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  #### Implemetando o modelo de negócio
  
  Com base eum projeto de pedidos estilo ecommerce temos um modelo de domínio e relacionamento entre tabelas que precisarão ser mapeadas e interagir com a base de dados.
+ 
  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-type-orm/diagrmama.PNG)
+ 
+ * Criando nossa primeira migration (create table tab_cliente)
+ 
+ ``` TERMINAL
+ typeorm migration:create -n CreateTabCliente
+ ```
  
   
