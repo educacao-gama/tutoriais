@@ -220,4 +220,9 @@ app.use(routes);
 app.listen(3000, ()=>console.log("Serviço inicializado na porta 3000"));
 
 ```
+Tudo configurado, hora de iniciar a nossa aplicação com o comando
+
+```
+yarn dev
+```
 
