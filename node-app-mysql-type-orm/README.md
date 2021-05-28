@@ -108,9 +108,7 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
                     {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
                     {name: "cpf_cnpj", type: "varchar", length: "15"},
                     {name: "nome", type: "varchar", length: "50"},
-                    {name: "ativo", type: "boolean", default: true},
-                    {name: "dt_inclusao", type: "timestamp", default: "now()"},
-                    {name: "dt_alteracao", type: "timestamp", default: "now()"},      
+                    {name: "ativo", type: "boolean", default: true}
                 ]
             })
         )
@@ -121,6 +119,14 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
     }
 
 }
-
- 
  ```
+ * Hora de validar se nossa tabela será criada com base nas configurações acima.
+ * Criando a tabela
+ ``` TERMINAL
+ typeorm migration:run
+ ```
+ * Removendo (Revertendo) a instrução anterior
+ ``` TERMINAL
+ typeorm migration:revert
+ ```
+
