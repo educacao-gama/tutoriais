@@ -100,25 +100,26 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
 
 export class CreateTabCliente1622163365363 implements MigrationInterface {
 
-    public async up(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.createTable( 
-            new Table({
-                name: "tab_user",
-                columns:[
-                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
-                    {name: "cpf_cnpj", type: "varchar", length: "15"},
-                    {name: "nome", type: "varchar", length: "50"},
-                    {name: "ativo", type: "boolean", default: true}
-                ]
-            })
-        )
-    }
+   public async up(queryRunner: QueryRunner): Promise<void> {
+       await queryRunner.createTable( 
+           new Table({
+               name: "tab_cliente",
+               columns:[
+                   {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                   {name: "cpf_cnpj", type: "varchar", length: "15"},
+                   {name: "nome", type: "varchar", length: "50"},
+                   {name: "ativo", type: "boolean", default: true}
+               ]
+           })
+       )
+   }
 
-    public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable( "tab_usuario")
-    }
+   public async down(queryRunner: QueryRunner): Promise<void> {
+       await queryRunner.dropTable( "tab_cliente")
+   }
 
 }
+
  ```
  * Hora de validar se nossa tabela será criada com base nas configurações acima.
  * Criando a tabela
