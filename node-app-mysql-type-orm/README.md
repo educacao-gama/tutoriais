@@ -141,7 +141,7 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
 
  * Dentro de `src` crie a pasta `entities` e dentro de entitites crie o arquivo `Cliente.ts` com o código abaixo:
  
- ``` TERMINAL
+ ```
  import {Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryColumn,PrimaryGeneratedColumn } from "typeorm";
 
 @Entity("tab_user")
@@ -169,3 +169,8 @@ class Cliente{
 export {Cliente}
  ```
  
+* Mepeamento\Decorators são declarações que iniciam com `@` logo faz-se necessário habilitar duas propriedades no arquivo `tsconfi.json`
+```
+"experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
+"emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
+```
