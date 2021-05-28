@@ -174,3 +174,18 @@ export {Cliente}
 "experimentalDecorators": true,              /* Enables experimental support for ES7 decorators. */
 "emitDecoratorMetadata": true,               /* Enables experimental support for emitting type metadata for decorators. */
 ```
+
+* Ao persistir com framework ORM, o mesmo prové de mecanismos de repositório que dispõe de métodos CRUD sobre a entidade declarara, com isso dentro de `src` crie a pasta `repositories` e dentro de repositories os arquivo  `ClienteRepository` com o código abaixo.
+
+```
+import {EntityRepository, Repository} from "typeorm";
+import { Cliente } from "../entities/Cliente";
+
+@EntityRepository(Cliente)
+class ClienteRepository extends Repository <Cliente> {
+
+}
+
+export {Cliente}
+```
+
