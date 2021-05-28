@@ -67,7 +67,7 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  "migrations":["./src/database/migrations/**.ts"]
  ```
  
- * Execute o comando:
+ * Para criar as migrations precisaram exectar o cli do TypeOrm, basta incluir dentro de script no arquivo `package.json`:
  ```
- knex migrate:make create_tab_cadastro
+ "typeorm":"ts-node-dev node_modules/typeorm/cli.ts" 
  ```
