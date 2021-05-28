@@ -36,7 +36,7 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
     "port": 3306,
     "username": "root",
     "password": "root",
-    "database": "xp_db"
+    "database": "db_xp"
    }
    ```
    1. Em seguida criar uma conexão com base nas configurações acima atráves do novo arquivo `index.ts` dentro da nova pasta `src\database` com o seguinte conteúdo:
