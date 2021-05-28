@@ -85,10 +85,11 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  
  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-type-orm/diagrmama.PNG)
  
- * Criando nossa primeira migration (create table tab_cliente)
+ * Criando nossa primeira migration (create table tab_cliente) e obter o resultado conforme imagem
  
  ``` TERMINAL
  typeorm migration:create -n CreateTabCliente
  ```
  
+  ![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-mysql-type-orm/migration-tab_cliente.png)
   
