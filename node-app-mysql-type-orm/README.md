@@ -64,10 +64,18 @@ Já o Down é ao contrário do UP, tudo o que for feito na UP é desfeito na DOW
  * Altere o arquivo `ormconfig.json` definindo o(s) diretórios(s) que ficarão os arquivos criados para estruturação da base de dados
  
  ```
- "migrations":["./src/database/migrations/**.ts"]
+ "migrations":["./src/database/migrations/**.ts"],
  ```
  
  * Para criar as migrations precisaram exectar o cli do TypeOrm, basta incluir dentro de script no arquivo `package.json`:
  ```
  "typeorm":"ts-node-dev node_modules/typeorm/cli.ts" 
  ```
+ * Com o cli do TypeOrm configurado alteramos o arquivo `ormconfig.json` para executar a cli configurada:
+ 
+ ```
+ "cli":{
+        "migrationsDir":"./src/database/migrations"
+    }
+ ```
+  
