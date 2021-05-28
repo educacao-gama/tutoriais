@@ -27,8 +27,8 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
    yarn add mysql2
    ```
    
- 1.Nesta parte seguiremos as intruções do próprio [site](https://typeorm.io/#/using-ormconfig) criando primeiramento o arquivo `ormconfig.json` pasta `src` 
-   1. Dentro do arquivo `ormconfig.json` incluir a configuração de conexão ao banco de dados.
+1. Nesta parte seguiremos as intruções do próprio [site](https://typeorm.io/#/using-ormconfig) criando primeiramento o arquivo `ormconfig.json` pasta `src` 
+   1. Dentro do arquivo `ormconfig.json` incluir a configuração de conexão ao banco de dados:
    ```
    {
     "type": "mysql",
@@ -39,4 +39,10 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
     "database": "xp_db"
    }
    ```
-  
+   1. Em seguida criar uma conexão com base nas configurações acima atráves do novo arquivo `database\index.ts` com o seguinte conteúdo:
+   
+   ```
+   import {createConnection} from 'typeorm';
+
+   createConnection();
+   ```
