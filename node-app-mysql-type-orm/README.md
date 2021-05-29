@@ -19,6 +19,7 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
 1. Adicionamos as dependências do `typeorm` e ou do drive do banco de sua preferência, no nosso caso o  `mysql2`.
 
    ```
+   npm install --global typeorm
    yarn add typeorm
    yarn add reflect-metadata
    ```
