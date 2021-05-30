@@ -227,3 +227,184 @@ Tudo configurado, hora de iniciar a nossa aplicação com o comando
 yarn dev
 ```
 
+##### Todas migrations:
+
+###### Endereço
+```
+import {MigrationInterface, QueryRunner,Table} from "typeorm";
+
+export class CreateTabEndereco1622329380884 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_endereco",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "numero", type: "varchar", length: "5"},
+                    {name: "logradouro", type: "varchar", length: "50"},
+                    {name: "cidade", type: "varchar", length: "50"},
+                       
+                ]
+            })
+        )
+    }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_endereco")
+    }
+}
+
+```
+
+###### Cliente
+```
+import {MigrationInterface, QueryRunner,TableForeignKey,Table} from "typeorm";
+
+export class CreateTabCliente1622329396710 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_cliente",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "cpf_cnpj", type: "varchar", length: "15", isNullable:false},
+                    {name: "nome", type: "varchar", length: "50",isNullable:false},
+                    {name: "ativo", type: "boolean", default: true, isNullable:false},
+                    {name: "dt_inclusao", type: "timestamp", default: "now()"},
+                    {name: "dt_alteracao", type: "timestamp", default: "now()"},
+                    {name: "cd_endereco", type: "integer", length: "5"},
+                        
+                ]
+            })
+        )
+         
+        await queryRunner.createForeignKey("tab_cliente", new TableForeignKey({
+         columnNames: ["cd_endereco"],
+         referencedColumnNames: ["id"],
+         referencedTableName: "tab_endereco",
+         name:"fk_cliente_endereco"
+     }));
+ 
+    }
+    
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_cliente")
+    }
+
+}
+```
+
+###### Cliente Telefone
+```
+import {MigrationInterface, QueryRunner, Table} from "typeorm";
+
+export class CreateTabClienteTelefone1622329411279 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_cliente_telefone",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "cd_cliente", type: "integer", length: "5"},
+                    {name: "tipo", type: "varchar", length: "10"},
+                    {name: "ddd", type: "integer", length: "3"},
+                    {name: "numero", type: "integer", length: "10"},
+                ]
+            })
+        )
+    }
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_cliente_telefone")
+    }
+}
+```
+
+###### Produto
+```
+import {MigrationInterface, QueryRunner, Table} from "typeorm";
+
+export class CreateTabProduto1622329420364 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_produto",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "cd_barras", type: "varchar", length: "15"},
+                    {name: "nome", type: "varchar", length: "50"},
+                    {name: "vl_unit", type: "numeric", precision: 8, scale:2},
+                ]
+            })
+        )
+    }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_produto")
+    }
+}
+
+```
+
+###### Pedido
+```
+import {MigrationInterface, QueryRunner,Table} from "typeorm";
+
+export class CreateTabPedido1622329431612 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_pedido",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "cd_cliente", type: "integer", length: "5"},
+                    {name: "dh_pedido", type: "timestamp"},
+                    {name: "vl_total", type: "numeric", precision: 8, scale:2},
+                ]
+            })
+        )
+    
+    }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_pedido")
+    }
+
+}
+```
+
+###### Pedido Item
+```
+import {MigrationInterface, QueryRunner, Table} from "typeorm";
+
+export class CreateTabPedidoItem1622329439796 implements MigrationInterface {
+
+    public async up(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.createTable( 
+            new Table({
+                name: "tab_pedido_item",
+                columns:[
+                    {name: "id", type: "integer",isPrimary: true, isGenerated: true, generationStrategy: "increment"},
+                    {name: "cd_produto", type: "integer", length: "5"},
+                    {name: "quant", type: "numeric", precision: 8, scale:2},
+                    {name: "vl_unit", type: "numeric", precision: 8, scale:2},
+                    {name: "vl_total", type: "numeric", precision: 8, scale:2},
+                    {name: "cd_pedido", type: "integer", length: "5"},
+                ]
+            })
+        )
+    }
+
+    public async down(queryRunner: QueryRunner): Promise<void> {
+        await queryRunner.dropTable( "tab_pedido_item")
+    }
+}
+```
+
+
+
