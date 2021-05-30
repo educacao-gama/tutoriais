@@ -227,7 +227,7 @@ Tudo configurado, hora de iniciar a nossa aplicação com o comando
 yarn dev
 ```
 
-##### Todas migrations:
+## Todas migrations:
 
 ###### Endereço
 ```
@@ -404,6 +404,173 @@ export class CreateTabPedidoItem1622329439796 implements MigrationInterface {
         await queryRunner.dropTable( "tab_pedido_item")
     }
 }
+```
+
+## Todas entidades:
+
+###### Endereço:
+
+```
+import {Column,Entity,PrimaryGeneratedColumn, BaseEntity} from "typeorm";
+
+@Entity("tab_endereco")
+export class Endereco extends BaseEntity {
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    logradouro: string;
+    
+    @Column()
+    numero: string;
+
+    @Column()
+    cidade: string;
+
+}
+
+```
+
+###### Cliente:
+
+```
+import {Entity, Column, CreateDateColumn, UpdateDateColumn, 
+    BaseEntity,PrimaryGeneratedColumn, OneToOne, JoinColumn,
+    OneToMany 
+    } from "typeorm";
+import { ClienteTelefone } from "./ClienteTelefone";
+import { Endereco } from "./Endereco";
+
+@Entity("tab_cliente")
+export class Cliente extends BaseEntity{
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column({name:"cpf_cnpj"})
+    cpfCnpj: string;
+
+    @OneToOne(()=>Endereco, {cascade: true,eager: true})
+    @JoinColumn({name:"cd_endereco"})
+    endereco:Endereco;
+
+    @Column()
+    nome: string;
+    
+    @Column()
+    ativo: boolean = true;
+    
+    
+    @CreateDateColumn({name:"dt_inclusao"})
+    dataInclusao: Date
+
+    @UpdateDateColumn({name:"dt_alteracao"})
+    dataAlteracao: Date   
+    
+    @OneToMany(() => ClienteTelefone, tel=> tel.cliente, {cascade: true, eager: true})
+    telefones: ClienteTelefone[];
+}
+
+```
+
+###### Cliente Telefone:
+
+```
+import {Column,Entity,PrimaryGeneratedColumn, BaseEntity,ManyToOne, JoinColumn} from "typeorm";
+import { Cliente } from "./Cliente";
+import { TelefoneTipo } from "./TelefoneTipo";
+
+@Entity("tab_cliente_telefone")
+export class ClienteTelefone extends BaseEntity {
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column()
+    ddd: number;
+    
+    @Column()
+    numero: number;
+
+    @Column({
+        type: "enum",
+        enum: TelefoneTipo,
+        name:"tipo"
+    })
+    tipo: TelefoneTipo;
+
+    @ManyToOne(() => Cliente, cliente => cliente.telefones)
+    @JoinColumn({name:"cd_cliente"})
+    cliente: Cliente;
+}
+
+```
+
+###### Telefone Tipo:
+
+```
+export enum TelefoneTipo {
+    'FIXO',
+    'CELULAR',
+    'WHATSAPP'
+  }
+
+```
+
+###### Pedido:
+
+```
+import {Entity, Column, 
+    BaseEntity,PrimaryGeneratedColumn,OneToMany
+    } from "typeorm";
+
+    import { PedidoItem } from "./PedidoItem";
+@Entity("tab_pedido")
+export class Pedido extends BaseEntity{
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column({name:"cd_cliente"})
+    cliente: number;
+
+    @Column({name:"dh_pedido"})
+    dataHora: Date;
+
+    @Column({name:"vl_total"})
+    valorTotal: number;
+
+    @OneToMany(() => PedidoItem, item=> item.pedido, {cascade: true, eager: true})
+    itens: PedidoItem[];
+
+}
+```
+
+###### Pedido Item:
+
+```
+import {Column,Entity,PrimaryGeneratedColumn, BaseEntity,ManyToOne, JoinColumn} from "typeorm";
+import { Pedido } from "./Pedido";
+
+@Entity("tab_pedido_item")
+export class PedidoItem extends BaseEntity{
+    @PrimaryGeneratedColumn()
+    id: number;
+
+    @Column({name:"cd_produto"})
+    produto: number;
+
+    @Column({name:"quant"})
+    quantidade: number;
+
+    @Column({name:"vl_unit"})
+    valorUnitario: number;
+
+    @Column({name:"vl_total"})
+    subTotal: number;
+
+    @ManyToOne(() => Pedido, pedido => pedido.itens)
+    @JoinColumn({name:"cd_pedido"})
+    pedido: Pedido;   
+}
+
 ```
 
 
