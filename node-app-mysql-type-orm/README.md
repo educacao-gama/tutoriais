@@ -28,7 +28,7 @@ Um recurso em Node.JS para disponibilizar umas das implementações do conceito 
    yarn add mysql2
    ```
    
-1. Nesta parte seguiremos as intruções do próprio [site](https://typeorm.io/#/using-ormconfig) criando primeiramente o arquivo `ormconfig.json`no raiz do projeto 
+1. Nesta parte seguiremos as intruções do próprio [site](https://typeorm.io/#/using-ormconfig) criando primeiramente o arquivo `ormconfig.json` na raiz do projeto 
    1. Dentro do arquivo `ormconfig.json` incluir a configuração de conexão ao banco de dados:
    ```
    {
