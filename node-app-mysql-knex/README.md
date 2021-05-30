@@ -34,7 +34,7 @@ Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipu
  
  Em nosso projeto será utilizado o MySQL com a seguinte configuração abaixo:
  
- * Criar o arquivo `knexfile.ts` no mesmo nível da pasta `src.ts`, este arquivo contém as propriedades para conectar ao banco MySQL
+ * Criar o arquivo `knexfile.ts` no mesmo nível da pasta `src`, este arquivo contém as propriedades para conectar ao banco MySQL
  
    ```
    export default {
