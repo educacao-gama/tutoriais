@@ -145,7 +145,7 @@ export class CreateTabCliente1622163365363 implements MigrationInterface {
  ```
  import {Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryColumn,PrimaryGeneratedColumn } from "typeorm";
 
-@Entity("tab_user")
+@Entity("tab_cliente")
 class Cliente{
     @PrimaryGeneratedColumn()
     id: number;
