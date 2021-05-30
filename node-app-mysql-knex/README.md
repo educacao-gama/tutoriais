@@ -72,6 +72,10 @@ Um módulo do Node.JS capaz de realizar interações de estrutura (DDL) e manipu
      3. Em seguida precisaremos incluir mais duas configurações no arquivo `knexfile.ts`
      
      ```
+     import path from 'path';
+     ```
+     
+     ```
         migrations: {
             tableName: 'knex_migrations',
             directory: path.resolve(__dirname, 'src', 'database', 'migrations'),
