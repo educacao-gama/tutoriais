@@ -36,3 +36,7 @@ Instalando o Mongo Database Tools
 
 Em seguida o famosso install com Next, Next e aceitar o termos de licença and Finish.
 
+Hora de configurar as variáveis de ambiente no Windows
+1. Localize aonde está instalado o MongoDB no Windows : C:\Program Files\MongoDB\Server\5.0\bin
+2. Localize meu computador -> propriedades -> configurações avançadas do sistema -> ABA Avançada -> Variáveis de ambiente
+
