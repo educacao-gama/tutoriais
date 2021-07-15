@@ -42,5 +42,8 @@ Hora de configurar as variáveis de ambiente no Windows
 3. Localize a variável de SISTEMA Path, clicar em Editar e adicionar a o caminho do Mongo C:\Program Files\MongoDB\Server\5.0\bin (ver versão)
 4. Agora, abra o Prompt de Comando - CMD, digite mongo e se tudo estiver OK, receberá o log abaixo:
 
+Realize o mesmo processo de configuração para Mongo Tools nas variáveis de ambiente no Windows
+1. Adicione na variável Path - C:\Program Files\MongoDB\Tools\100\bin
+
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo-cmd.png)
 
