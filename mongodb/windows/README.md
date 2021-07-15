@@ -29,3 +29,7 @@ Depois habilidar o Mongo Compass
 Iniciando o serviço com o Mongo Compass
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/settings.png)
+
+Instalando o Mongo Database Tools
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/database_tools.png)
