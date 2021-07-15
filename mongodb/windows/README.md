@@ -29,3 +29,18 @@ Depois habilidar o Mongo Compass
 Iniciando o serviço com o Mongo Compass
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/settings.png)
+
+Instalando o Mongo Database Tools
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/database_tools.png)
+
+Em seguida o famosso install com Next, Next e aceitar o termos de licença and Finish.
+
+Hora de configurar as variáveis de ambiente no Windows
+1. Localize aonde está instalado o MongoDB no Windows : C:\Program Files\MongoDB\Server\5.0\bin (ver versão)
+2. Localize meu computador -> propriedades -> configurações avançadas do sistema -> ABA Avançado -> Variáveis de ambiente
+3. Localize a variável de SISTEMA Path, clicar em Editar e adicionar a o caminho do Mongo C:\Program Files\MongoDB\Server\5.0\bin (ver versão)
+4. Agora, abra o Prompt de Comando - CMD, digite mongo e se tudo estiver OK, receberá o log abaixo:
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/database_tools.png)
+
