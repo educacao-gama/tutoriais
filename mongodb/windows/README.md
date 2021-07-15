@@ -21,3 +21,7 @@ Em seguida o famosso install com Next, Next e aceitar o termos de licença, até
 Após, realizar a configuração do serviço:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/service_config.png)
+
+Depois habilidar o Mongo Compass
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo_compass.png)
