@@ -47,11 +47,11 @@ Realize o mesmo processo de configuração para Mongo Tools nas variáveis de am
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/path.PNG)
 
-Agora, abra o Prompt de Comando - CMD, digite mongo e se tudo estiver OK, receberá o log abaixo:
+Agora, abra o Prompt de Comando - CMD, digite `mongo` e se tudo estiver OK, receberá o log abaixo:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo-cmd.png)
 
-Também no Prompt de Comando - CMD, digite mongoimport e se tudo estiver OK, receberá o log abaixo:
+Também no Prompt de Comando - CMD, digite `mongoimport` e se tudo estiver OK, receberá o log abaixo:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo-import.png)
 
