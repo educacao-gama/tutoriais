@@ -51,3 +51,7 @@ Agora, abra o Prompt de Comando - CMD, digite mongo e se tudo estiver OK, recebe
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo-cmd.png)
 
+Também no Prompt de Comando - CMD, digite mongoimport e se tudo estiver OK, receberá o log abaixo:
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongoimport.png)
+
