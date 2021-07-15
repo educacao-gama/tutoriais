@@ -45,7 +45,7 @@ Realize o mesmo processo de configuração para Mongo Tools nas variáveis de am
 1. Adicione na variável Path - C:\Program Files\MongoDB\Tools\100\bin
 
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/path.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/path.PNG)
 
 Agora, abra o Prompt de Comando - CMD, digite mongo e se tudo estiver OK, receberá o log abaixo:
 
@@ -53,5 +53,5 @@ Agora, abra o Prompt de Comando - CMD, digite mongo e se tudo estiver OK, recebe
 
 Também no Prompt de Comando - CMD, digite mongoimport e se tudo estiver OK, receberá o log abaixo:
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongoimport.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo-import.png)
 
