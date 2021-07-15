@@ -14,7 +14,7 @@ Acesse: https://www.mongodb.com/try/download/community
 
 Você deve selecionar a opção On-promisses e realizar o download conforme imagem abaixo
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/git-github/git-download.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/install.png)
 
 Em seguida o famosso install com Next, Next e aceitar o termos de licença, até chegar em `Chose Setupe Type` e selecione `Complete` para realizar a instalação padrão.
 
