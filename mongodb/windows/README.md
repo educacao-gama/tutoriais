@@ -25,3 +25,7 @@ Após, realizar a configuração do serviço:
 Depois habilidar o Mongo Compass
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/mongo_compass.png)
+
+Iniciando o serviço com o Mongo Compass
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/settings.png)
