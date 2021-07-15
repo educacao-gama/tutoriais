@@ -33,3 +33,6 @@ Iniciando o serviço com o Mongo Compass
 Instalando o Mongo Database Tools
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/windows/database_tools.png)
+
+Em seguida o famosso install com Next, Next e aceitar o termos de licença and Finish.
+
