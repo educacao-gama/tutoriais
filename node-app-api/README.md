@@ -10,11 +10,7 @@ Criando APIs simples com Node.JS
 #### Requisitos
 [Iniciando um projeto Node.JS com NPM e Yarn - No WINDOWS](https://github.com/educacao-gama/tutoriais/tree/main/node-app-yarn)
 
-Com base no nosso projeto Node.JS com Yarn iremos criaremos rotas ou serviços APIs para gerenciamento de filmes conforme dados ilustrativos abaixo.
-
-![](https://github.com/educacao-gama/tutoriais/blob/main/node-app-api/filme.png)
-
-###### Fonte: https://www.adorocinema.com/filmes/filme-268680/
+Com base no nosso projeto Node.JS com Yarn iremos criaremos rotas ou serviços APIs para gerenciamento de um CRUD de cadastros.
 
 
 Conhecendo um pouco sobre o que é API Rest.
