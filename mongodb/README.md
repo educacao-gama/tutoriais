@@ -9,7 +9,7 @@ MongoDB é um banco de dados de código aberto, gratuito, de alta performance, s
 Instalando o MongoDB: 
 [windows](https://github.com/educacao-gama/tutoriais/tree/main/mongodb/windows)
 
-Criando o banco de dados local com MongoDB Compass:
+#### Criando o banco de dados local com MongoDB Compass:
 1. Localize o aplicativo MongoDBCompass
 2. Clique em `Fill in connection fields individually` e deverá aparecer a tela abaixo, depois clique em `Connect`
 
@@ -74,7 +74,7 @@ Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/products.png)
 
-COMO NEM TUDO SÃO FLORES, Vamos executar alguns comandos via terminal: Abra o Prompt de Comando e vamos realizar comandos CRUD em nossa database.
+#### COMO NEM TUDO SÃO FLORES, Vamos executar alguns comandos via terminal: Abra o Prompt de Comando e vamos realizar comandos CRUD em nossa database.
 
 1. digite: `mongo` para iniciar a interação com o banco de dados
 2. depois digite: `use storedb` (ou seu database) para conectar ao database
@@ -99,5 +99,16 @@ db.products.update( {_id:ObjectId("60f1ceab6114061cb209cc07")}, {$set: {"name": 
 db.products.remove( {_id:ObjectId("60f1ceab6114061cb209cc07")})
 ```
 
+#### Realizando consultas com MongoDB
+
+1. Consulta simples (listando todos os registros)
+```
+db.products.find()
+```
+
+2. Consulta simples formatando o JSON
+```
+db.products.find().pretty()
+```
 
 
