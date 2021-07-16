@@ -142,6 +142,6 @@ db.products.update( {_id:ObjectId("60f1bfc18d799fcdcf901ab0")}, {$set: {"year": 
 db.products.find({ year: {$gte: 1900} })
 ```
 
-
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/filter.png)
 
 
