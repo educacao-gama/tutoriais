@@ -7,7 +7,7 @@ MongoDB é um banco de dados de código aberto, gratuito, de alta performance, s
 
 
 Instalando o MongoDB: 
-![windows](https://github.com/educacao-gama/tutoriais/tree/main/mongodb/windows)
+[windows](https://github.com/educacao-gama/tutoriais/tree/main/mongodb/windows)
 ```
 Acesse: https://github.com/educacao-gama/tutoriais/tree/main/mongodb/windows
 ```
