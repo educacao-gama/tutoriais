@@ -113,3 +113,10 @@ db.products.find().pretty()
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/list.png)
 
+3. Listando produtos por algum atributo, no nosso caso se tipo do produto = CD
+```
+db.products.find({"type": "CD"}).pretty()
+```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/list.png)
+
