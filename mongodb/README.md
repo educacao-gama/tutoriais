@@ -44,15 +44,20 @@ LIVROS
 
 CDS
 
-* Xou da Xuxa de Xuxa
-* Músicas para Louvar o Senhor	de Padre Marcelo Rossi
-* Leandro & Leonardo de Leandro & Leonardo
-* Rádio Pirata ao Vivo	de RPM	1986
-* O Canto da Cidade	de Daniela Mercury
-* Quatro Estações: O Show	de Sandy & Junior
-* Só pra Contrariar	de Só Pra Contraria
+* XOU DA XUXA de Xuxa
+* MÚSICAS PARA LOUVAR O SENHOR	de Padre Marcelo Rossi
+* LEANDRO & LEONARDO de Leandro & Leonardo
+* RÁDIO PIRATA AO VIVO	de RPM	1986
+* O CANTO DA CIDADE	de Daniela Mercury
+* QUATRO ESTAÇÕES: O SHOW de Sandy & Junior
+* SÓ PRA CONTRARIAR	de Só Pra Contrariar
 
 Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 
 1. Analise o diagrama
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/diagrama.png)
+
 2. Realizar a inserção de um novo documento para item de livro e cd citados acima
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/insert.png)
