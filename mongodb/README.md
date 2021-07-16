@@ -111,4 +111,5 @@ db.products.find()
 db.products.find().pretty()
 ```
 
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/list.png)
 
