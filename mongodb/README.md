@@ -30,6 +30,8 @@ Criando o banco de dados local com MongoDB Compass:
 
 O cadastro de produtos serão livros e cd para demonstrar a estruturação de dados com estruturas diferentes:
 
+LIVROS
+
 * A ARCA DE NOÉ de Vinícius de Moraes
 * A HISTÓRIA DA SOPEIRA E DA CONCHA de Michael Ende
 * A RAINHA DA NEVE de Hans Christian Andersen
@@ -39,3 +41,14 @@ O cadastro de produtos serão livros e cd para demonstrar a estruturação de da
 * O GATO E O DIABO de James Joyce
 * O PEQUENO VAMPIRO de Angela Sommer Bodenburg
 * O SACI de Monteiro Lobato
+
+CDS
+
+* Xou da Xuxa de Xuxa
+* Músicas para Louvar o Senhor	de Padre Marcelo Rossi
+* Leandro & Leonardo de Leandro & Leonardo
+* Rádio Pirata ao Vivo	de RPM	1986
+* O Canto da Cidade	de Daniela Mercury
+* Quatro Estações: O Show	de Sandy & Junior
+* Só pra Contrariar	de Só Pra Contrariar
+
