@@ -120,3 +120,8 @@ db.products.find({"type": "CD"}).pretty()
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/findby.png)
 
+
+#### Realizando consultas um pouco mais avançadas
+
+1. Vamos imaginar que agora os produtos livros e cds terão o campo ano (year) e vamos usar algumas representações de expressões como > (maior), < (menor), >= (maior ou igual) e etc
+
