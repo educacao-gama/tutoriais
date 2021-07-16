@@ -61,3 +61,9 @@ Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 2. Realizar a inserção de um novo documento para item de livro e cd citados acima
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/insert.png)
+
+3. Observe que a estrutura do documento é dinamica, logo você pode incluir os atributos e valores ao registro (documento) inserido
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/book.png)
+
+
