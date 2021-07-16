@@ -66,4 +66,14 @@ Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/book.png)
 
+4. Será gerado um documento no formato JSON para ser inserido
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/book_json.png)
+
+4. Depois é só listar os documentos inseridos
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/products.png)
+
+
+
 
