@@ -132,6 +132,7 @@ db.products.update( {_id:ObjectId("60f1bf948d799fcdcf901aae")}, {$set: {"year": 
 db.products.update( {_id:ObjectId("60f1bfc18d799fcdcf901ab0")}, {$set: {"year": 1990}})
 ```
 
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/year.png)
 
 
 
