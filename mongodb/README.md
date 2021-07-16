@@ -27,3 +27,15 @@ Criando o banco de dados local com MongoDB Compass:
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/sobre.png)
 
 5. Hora de criar nossos `documents` (registros)
+
+O cadastro de produtos serão livros e cd para demonstrar a estruturação de dados com estruturas diferentes:
+
+A ARCA DE NOÉ de Vinícius de Moraes
+A HISTÓRIA DA SOPEIRA E DA CONCHA de Michael Ende
+A RAINHA DA NEVE de Hans Christian Andersen
+CACHINHOS DE OURO de Ana Maria Machado
+CHAPEUZINHO E O LOBO MAU de Pedro Bandeira
+CONTOS DE PERRAULT de Ruth Rocha
+O GATO E O DIABO de James Joyce
+O PEQUENO VAMPIRO de Angela Sommer Bodenburg
+O SACI de Monteiro Lobato
