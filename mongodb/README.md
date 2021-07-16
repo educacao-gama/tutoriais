@@ -94,5 +94,10 @@ db.products.update( {_id:ObjectId("60f1ceab6114061cb209cc07")}, {$set: {"name": 
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/shell_update.png)
 
+5. Para remover o registro pelo ID (localizar o ID) basta executar o comando
+```
+db.products.remove( {_id:ObjectId("60f1ceab6114061cb209cc07")})
+```
+
 
 
