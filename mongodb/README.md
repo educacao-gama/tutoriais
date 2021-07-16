@@ -16,5 +16,8 @@ Criando o banco de dados local com MongoDB Compass:
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/connect.png)
 
 3. Em seguida, criamos o banco de dados cliando no `CREATE DATABASE`, banco exemplo: `storedb`
+4. Nesta etapa é necessário informar o nome do `database` e primeiro `document`
+    1. databse: `storedb`
+    2. document: `products`
 
 
