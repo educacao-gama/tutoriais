@@ -78,7 +78,7 @@ COMO NEM TUDO SÃO FLORES, Vamos executar alguns comandos via terminal: Abra o P
 
 1. digite: `mongo` para iniciar a interação com o banco de dados
 2. depois digite: `use storedb` (ou seu database) para conectar ao database
-   você deverá receber a mensagem no console algo como: "switched to db storedb"
+   * você deverá receber a mensagem no console algo como: `"switched to db storedb"`
 
 
 
