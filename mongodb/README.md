@@ -50,5 +50,9 @@ CDS
 * Rádio Pirata ao Vivo	de RPM	1986
 * O Canto da Cidade	de Daniela Mercury
 * Quatro Estações: O Show	de Sandy & Junior
-* Só pra Contrariar	de Só Pra Contrariar
+* Só pra Contrariar	de Só Pra Contraria
 
+Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
+
+1. Analise o diagrama
+2. Realizar a inserção de um novo documento para item de livro e cd citados acima
