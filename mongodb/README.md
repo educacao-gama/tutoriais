@@ -118,5 +118,5 @@ db.products.find().pretty()
 db.products.find({"type": "CD"}).pretty()
 ```
 
-![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/list.png)
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/findby.png)
 
