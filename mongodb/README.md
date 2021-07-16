@@ -145,3 +145,6 @@ db.products.find({ year: {$gte: 1900} })
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/filter.png)
 
 
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/filter_compass.png)
+
+
