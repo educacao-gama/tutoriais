@@ -55,7 +55,9 @@ CDS
 Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 
 1. Analise o diagrama
+
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/diagrama.png)
 
 2. Realizar a inserção de um novo documento para item de livro e cd citados acima
+
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/insert.png)
