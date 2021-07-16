@@ -134,5 +134,14 @@ db.products.update( {_id:ObjectId("60f1bfc18d799fcdcf901ab0")}, {$set: {"year": 
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/year.png)
 
+* gt (greater than) maior que
+* gte (greater than or equals) maior ou igual a
+* lt (less than) menor que
+* lte (less than or equals) menor ou igual a
+```
+db.products.find({ year: {$gte: 1900} })
+```
+
+
 
 
