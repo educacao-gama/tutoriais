@@ -84,10 +84,15 @@ COMO NEM TUDO SÃO FLORES, Vamos executar alguns comandos via terminal: Abra o P
 ```
 db.products.insert ( {"name": "QUATRO ESTAÇÕES: O SHOW","author": "Sandy & Junior","type": "CD"} )
 ```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/shell_insert.png)
+
 4. Alterando o registro pelo ID. NOTA: ID utilizado sempre será alterado por um outro valor, por isso, realize a consulta dos registros
 ```
 db.products.update( {_id:ObjectId("60f1ceab6114061cb209cc07")}, {$set: {"name": "Quatro Estações O Show"}})
 ```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/shell_update.png)
 
 
 
