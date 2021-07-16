@@ -26,6 +26,4 @@ Criando o banco de dados local com MongoDB Compass:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/sobre.png)
 
-
-
-
+5. Hora de criar nossos `documents` (registros)
