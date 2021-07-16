@@ -74,6 +74,20 @@ Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/products.png)
 
+COMO NEM TUDO SÃO FLORES, Vamos executar alguns comandos via terminal: Abra o Prompt de Comando e vamos realizar comandos CRUD em nossa database.
+
+1. digite: `mongo` para iniciar a interação com o banco de dados
+2. depois digite: `use storedb` (ou seu database) para conectar ao database
+   * você deverá receber a mensagem no console algo como: `"switched to db storedb"`
+
+3. Inserindo um registro na collection storedb atraves do comando abaixo:
+```
+db.products.insert ( {"name": "QUATRO ESTAÇÕES: O SHOW","author": "Sandy & Junior","type": "CD"} )
+```
+4. Alterando o registro pelo ID. NOTA: ID utilizado sempre será alterado por um outro valor, por isso, realize a consulta dos registros
+```
+db.products.update( {_id:ObjectId("60f1ceab6114061cb209cc07")}, {$set: {"name": "Quatro Estações O Show"}})
+```
 
 
 
