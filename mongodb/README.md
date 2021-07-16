@@ -124,4 +124,14 @@ db.products.find({"type": "CD"}).pretty()
 #### Realizando consultas um pouco mais avançadas
 
 1. Vamos imaginar que agora os produtos livros e cds terão o campo ano (year) e vamos usar algumas representações de expressões como > (maior), < (menor), >= (maior ou igual) e etc
+```
+db.products.update( {_id:ObjectId("60f1beb68d799fcdcf901aac")}, {$set: {"year": 1984}})
+
+db.products.update( {_id:ObjectId("60f1bf948d799fcdcf901aae")}, {$set: {"year": 2000}})
+
+db.products.update( {_id:ObjectId("60f1bfc18d799fcdcf901ab0")}, {$set: {"year": 1990}})
+```
+
+
+
 
