@@ -148,3 +148,25 @@ db.products.find({ year: {$gte: 1900} })
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/filter_compass.png)
 
 
+2. Agora, consideramos que nossos produtos terão tags de classificação e precisaremos listar com todos ou alguma tag informada.
+
+Atualizando os produtos adicionando as TAGs
+```
+db.products.update( {_id:ObjectId("60f1beb68d799fcdcf901aac")}, {$set: {"tags": ['drama','suspense']}})
+
+db.products.update( {_id:ObjectId("60f1bf948d799fcdcf901aae")}, {$set: {"tags": ['suspense','ficcao']}})
+```
+
+#### Operadores all / in
+##### Esses operadores existem para trabalharmos com arrays.
+
+O operador $all retorna o documento se todos os itens procurados estiverem contidos na query. E o operador $in varre o array mostrando os documents que contenham algum dos itens especificados.
+```
+retorna os produtos que possuem com todas as tags passadas como parametro
+db.products.find( { tags: {$all: ['drama','suspense']} } ).pretty()
+
+retorna os produtos que possuem ao menos uma tag passada como parametro 
+db.products.find( { tags: {$in: ['suspense']} } ).pretty()
+```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/all_in.png)
