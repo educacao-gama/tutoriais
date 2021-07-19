@@ -168,3 +168,5 @@ db.products.find( { tags: {$all: ['drama','suspense']} } ).pretty()
 retorna os produtos que possuem ao menos uma tag passada como parametro 
 db.products.find( { tags: {$in: ['suspense']} } ).pretty()
 ```
+
+![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/all_in.png)
