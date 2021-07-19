@@ -157,7 +157,14 @@ db.products.update( {_id:ObjectId("60f1beb68d799fcdcf901aac")}, {$set: {"tags": 
 db.products.update( {_id:ObjectId("60f1bf948d799fcdcf901aae")}, {$set: {"tags": ['suspense','ficcao']}})
 ```
 
-****Operadores all / in
-******Esses operadores existem para trabalharmos com arrays.
+#### Operadores all / in
+##### Esses operadores existem para trabalharmos com arrays.
 
 O operador $all retorna o documento se todos os itens procurados estiverem contidos na query. E o operador $in varre o array mostrando os documents que contenham algum dos itens especificados.
+```
+retorna os produtos que possuem com todas as tags passadas como parametro
+db.products.find( { tags: {$all: ['drama','suspense']} } ).pretty()
+
+retorna os produtos que possuem ao menos uma tag passada como parametro 
+db.products.find( { tags: {$in: ['suspense']} } ).pretty()
+```
