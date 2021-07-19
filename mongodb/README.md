@@ -148,3 +148,12 @@ db.products.find({ year: {$gte: 1900} })
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/filter_compass.png)
 
 
+2. Agora, consideramos que nossos produtos terão tags de classificação e precisaremos listar com todos ou alguma tag informada.
+
+Atualizando os produtos adicionando as TAGs
+```
+db.products.update( {_id:ObjectId("60f1beb68d799fcdcf901aac")}, {$set: {"tags": ['drama','suspense']}})
+
+db.products.update( {_id:ObjectId("60f1bf948d799fcdcf901aae")}, {$set: {"tags": ['suspense','ficcao']}})
+```
+
