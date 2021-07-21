@@ -82,7 +82,12 @@ Hora de inserir nossos livros e cds considerando a estrutura do nosso diagrama:
 
 3. Inserindo um registro na collection storedb atraves do comando abaixo:
 ```
-db.products.insert ( {"name": "QUATRO ESTAÇÕES: O SHOW","author": "Sandy & Junior","type": "CD"} )
+db.products.insert ( {"name": "A ARCA DE NOÉ","author": "Vinícius de Moraes","type": "BOOK"} )
+db.products.insert ( {"name": "A RAINHA DA NEVE","author": "Hans Christian Andersen","type": "BOOK"} )
+db.products.insert ( {"name": "O GATO E O DIABO","author": "James Joyce","type": "BOOK"} )
+
+db.products.insert ( {"name": "QUATRO ESTAÇÕES: O SHOW","singer": "Sandy & Junior","type": "CD"} )
+db.products.insert ( {"name": "XOU DA XUXA","singer": "Xuxa","type": "CD"} )
 ```
 
 ![](https://github.com/educacao-gama/tutoriais/blob/main/mongodb/compass/shell_insert.png)
